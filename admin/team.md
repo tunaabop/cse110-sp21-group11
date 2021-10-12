@@ -9,10 +9,10 @@ As team 11, we wanted to incorporate our number into something that we all enjoy
 Instead of our tools consisting of various cooking equipment, we will instead be armed with our git repository, computers, knowledge, programs, team work, and communication skills. Cooking consists of preparing food through various different techniques and combining different foods and spices with a variety of kitchen tools depending on the dish, environment, and constraints. Software engineering is pretty similiar - He11's Kitchen's aim is to cook up tasty dishes, but unlike the chefs in Hell's Kitchen, we will all be working together cohesively as a team to come up with spectaular results rather than explicitly individually working in our stations.  
 
 ## **Values** ##
-Communication 
-Team contribution
-Don't feel afraid to ask for help
-Psychological safety - mistakes are normal, feel free to ask for help
+-Communication 
+-Team contribution
+-Don't feel afraid to ask for help
+-Psychological safety - mistakes are normal, feel free to ask for help
 
 ## **Members** ##
 
