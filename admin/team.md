@@ -1,9 +1,9 @@
 # **He11's Kitchen** #
 
-## ** Our Branding ** ##
+## **Our Branding** ##
 
-## ** Values ** ##
+## **Values** ##
 
-## ** Members ** ##
+## **Members** ##
 
-### ** Yekaterina Kostina ** ###
+### **Yekaterina Kostina** ###
