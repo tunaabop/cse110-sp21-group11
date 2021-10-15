@@ -20,4 +20,10 @@ Instead of our tools consisting of various cooking equipment, we will instead be
 
 [Github page](https://github.com/yekatya)
 
-I am a fourth year undergraduate student at UCSD majoring in applied mathematics and computer science. My professional and academic interests include software engineering and web development. I went to a charter fine arts school in high school called the Orange County School of the Arts where I was accepted into the visual arts conservatory, so my biggest hobby is art. I love to experiment with all types of mediums including digital media, watercolor, oil painting, and plein-air painting to name a few, but my absolute favorite is oil painting since it is the most forgiving! Otherwise, I love baking, reading, trying out different workouts, and cats. 
+I am a fourth year undergraduate student at UCSD majoring in applied mathematics and computer science. My professional and academic interests include software engineering and web development. I went to a charter fine arts school in high school called the Orange County School of the Arts where I was accepted into the visual arts conservatory, so my biggest hobby is art. I love to experiment with all types of mediums including digital media, watercolor, oil painting, and plein-air painting to name a few, but my absolute favorite is oil painting since it is the most forgiving! Otherwise, I love baking, reading, trying out different workouts, and cats.
+
+### **Donovan Eral** ###
+
+[Github page](https://github.com/Donovan-Eral)
+
+I am a 25-year-old student working on my bachelor's degree in mathematics and computer science. My professional interests are in cryptography and machine learning, though I am a novice in both. These fields seem incredibly relevant in this day and age, and I don't see them losing their relevance any time soon. As for personal interests, I enjoy cooking, painting, drawing, and skateboarding. I think cooking and painting go hand in hand, in a way, because they are both a form of art that requires a lot of practice to master. I'm no expert at either, but I enjoy learning and improving my skills.
