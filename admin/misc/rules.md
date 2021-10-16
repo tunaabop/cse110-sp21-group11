@@ -2,7 +2,7 @@
 ## Term FA21 ##
 ### Creation: 10/15/2021 ###
 
-1) ## **Group Identification** ##
+1)  **Group Identification** 
 
 Team # – 11
 Team Name # – He11’s Kitchen
