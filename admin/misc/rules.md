@@ -4,15 +4,15 @@
 
 1)  **Group Identification** 
 
-Team # – 11
-Team Name # – He11’s Kitchen
-Instructor – Professor Powell
-TA- Raaghav Ravi
+-Team # - 11
+-Team Name # – He11’s Kitchen
+-Instructor – Professor Powell
+-TA- Raaghav Ravi
 
 Team member info:
 
-Teammate name:
-Email:
+-Teammate name:
+-Email:
 
 2)  **Primary Means of Communication and Expectations** 
 
