@@ -21,3 +21,6 @@ Instead of our tools consisting of various cooking equipment, we will instead be
 [Github page](https://github.com/yekatya)
 
 I am a fourth year undergraduate student at UCSD majoring in applied mathematics and computer science. My professional and academic interests include software engineering and web development. I went to a charter fine arts school in high school called the Orange County School of the Arts where I was accepted into the visual arts conservatory, so my biggest hobby is art. I love to experiment with all types of mediums including digital media, watercolor, oil painting, and plein-air painting to name a few, but my absolute favorite is oil painting since it is the most forgiving! Otherwise, I love baking, reading, trying out different workouts, and cats. 
+
+### **Jingtian Lin** ###
+I am a third year undergraduate student at UCSD majoring in mathematics and computer science. I haven't find my academic interests yet, but are looking into areas like software developing and encryption. I went to catholic high school in ventura county. Somethings I enjoy doing are playing video games, watching movies, reading comics, and biking. 
