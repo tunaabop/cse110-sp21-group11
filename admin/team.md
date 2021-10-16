@@ -1,8 +1,10 @@
+![Hell's Kitchen Logo](/admin/branding/h11klogo-transparent.png)
+
 # **He11's Kitchen** #
 
 ## **Our Branding** ##
 
-(our logo - upload as pdf)
+![Hell's Kitchen Photo](/admin/branding/he11skitchen.png)
 
 As team 11, we wanted to incorporate our number into something that we all enjoy. We thought of Hell's Kitchen; Gordon Ramsay cracks down on aspiring chefs and aggressively teaches them sets of valuable skills that would serve to be useful to them throughout their careers. Now we are He11's Kitchen!
 
@@ -28,3 +30,8 @@ I am a fourth year undergraduate student at UCSD majoring in applied mathematics
 [Github page](https://github.com/zedianzhang)
 
 I am a forth fourth years undergraduate student at UCSD majoring in and computer science. My academic are machine  learning and deep learning, but most of the jobs in the machine learning field need a master or phd degree, so I plan to go deep in to the field, however it takes alot of time and money. In my free time, I like to play game and watch movies, I also love cats. I have two cats, Their name are 15 and 1.
+
+### **Ashwin Nambissan** ###
+[Github page](https://github.com/akn11)
+
+I am a fourth year undergraduate student studying Computer Engineering at UCSD. I'm very intrested in software development and aim to do that right after graduating. I am from the bay area and am a big fan of the 49ers and Warriors. Some things I like to do in my free time are play video games, read comics and travel. Right now in my free time, I am watching the tv shows Attack on Titan and Modern Family. 
