@@ -14,6 +14,7 @@ Instead of our tools consisting of various cooking equipment, we will instead be
 - Communication is key!
 - Team contribution from everyone, but make sure that not all the work falls onto one person or a few select team members. Remember, bus factor shouldn't be low.
 - Don't feel afraid to ask for help
+- Respect each other's point of views and commitment.
 - Psychological safety: Mistakes are normal. If a team member makes a mistake, don't attack them for it. Reassure them that it's okay and ask for help.
 
 ## **Members** ##
@@ -45,3 +46,9 @@ I am a third year undergraduate student at UCSD majoring in mathematics and comp
 [Github page](https://github.com/akn11)
 
 I am a fourth year undergraduate student studying Computer Engineering at UCSD. I'm very intrested in software development and aim to do that right after graduating. I am from the bay area and am a big fan of the 49ers and Warriors. Some things I like to do in my free time are play video games, read comics and travel. Right now in my free time, I am watching the tv shows Attack on Titan and Modern Family. 
+
+### **Tina Wang** ###
+
+[Github page](https://github.com/t6wang)
+
+I am a fourth year undergraduate student at UCSD studying mathematics-computer science and management science. My professional interest is software engineering. During my free time, I am passionate about watching team sports and playing lacrosse. I also enjoy exploring new music and everything outdoor such as going on new hikes as well as exploring new food places and trying out new drink recipes!
