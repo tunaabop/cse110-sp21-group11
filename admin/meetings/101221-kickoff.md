@@ -13,7 +13,7 @@ Type of meeting: Kickoff
 
 ## Attendance:
 ### Present:
-Donovan, Jingtian, Yekaterina, Moises, Tina, Vivian, Xianlong, Zedian, Ashwin, Milo (All members)
+Donovan, Jingtian, Yekaterina, Moises, Tina, Vivian, Xianglong, Zedian, Ashwin, Milo (All members)
 ### Absent:
 (None)
 
@@ -27,7 +27,7 @@ Yekaterina was chosen as the new team lead.
 - Plan:  
 - Dev A: Vivian, Jingtian
 - Dev B: Ashwin, Tina, Moises
-- Test: Zedian, Xianlong
+- Test: Zedian, Xianglong
 
 ### Group Contract Items Discussion:
 - Primary Means of Communication; Expectations thereof: 24 hours response time for messages, 12 if urgent.
@@ -36,7 +36,7 @@ said conflict intrapersonally; if the conflict is amongst more people and/or if 
  will get involved, then the TA, then the Professor as needed.
 - Expectations of Faculty: Same as in given example document.
 
-### Group Page- Discusing Values:
+### Group Page- Discussing Values:
 - Communication is key between all members.
 - All members are expected to contribute their fair share but should avoid taking on more than is necessary  
 to increase the bus factor.
