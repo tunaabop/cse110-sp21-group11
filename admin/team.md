@@ -1,6 +1,6 @@
 # **He11's Kitchen** #
 
-![Hell's Kitchen Logo](/admin/branding/h11klogotransparent_resize.png)
+![Hell's Kitchen Logo](/admin/branding/h11klogo-transparent.png)
 
 ## **Our Branding** ##
 
