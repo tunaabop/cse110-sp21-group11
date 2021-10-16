@@ -1,8 +1,10 @@
 # **He11's Kitchen** #
 
+![Hell's Kitchen Logo](/admin/branding/h11klogotransparent_resize.png)
+
 ## **Our Branding** ##
 
-(our logo - upload as pdf)
+![Hell's Kitchen Photo](/admin/branding/he11skitchen.png)
 
 As team 11, we wanted to incorporate our number into something that we all enjoy. We thought of Hell's Kitchen; Gordon Ramsay cracks down on aspiring chefs and aggressively teaches them sets of valuable skills that would serve to be useful to them throughout their careers. Now we are He11's Kitchen!
 
