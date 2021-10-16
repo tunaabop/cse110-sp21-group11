@@ -1,4 +1,4 @@
-
+﻿
 <div align="center"> <h1>Team 11 Working Agreement  <br>
 Term FA21  <br>
 Creation: 10/15/2021 </h1> </div>
@@ -18,16 +18,16 @@ Creation: 10/15/2021 </h1> </div>
    
 
 
-| **Teammate Name**| **Email:** |
-| ----------- | ----------- |
-|             |             |
-|             |             |
-|             |             |
-|             |             |
-|             |             |
-|             |             |
-|             |             |
-|             |             |
+| **Teammate Name** | **Email:** |
+| ----------------- | ---------- |
+|                   |            |
+|                   |            |
+|                   |            |
+|                   |            |
+|                   |            |
+|                   |            |
+|                   |            |
+|                   |            |
 
 
 
