@@ -38,6 +38,7 @@ I am a forth fourth years undergraduate student at UCSD majoring in and computer
 I am a 25-year-old student working on my bachelor's degree in mathematics and computer science. My professional interests are in cryptography and machine learning, though I am a novice in both. These fields seem incredibly relevant in this day and age, and I don't see them losing their relevance any time soon. As for personal interests, I enjoy cooking, painting, drawing, and skateboarding. I think cooking and painting go hand in hand, in a way, because they are both a form of art that requires a lot of practice to master. I'm no expert at either, but I enjoy learning and improving my skills.
 
 ### **Jingtian Lin** ###
+[Github page](https://github.com/jingtianlin19)
 
 I am a third year undergraduate student at UCSD majoring in mathematics and computer science. I haven't find my academic interests yet, but are looking into areas like software developing and encryption. I went to catholic high school in ventura county. Somethings I enjoy doing are playing video games, watching movies, reading comics, and biking. 
 
