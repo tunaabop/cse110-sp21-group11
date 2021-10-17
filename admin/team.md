@@ -65,3 +65,9 @@ I am a fourth year undergraduate student majoring in Math-Computer Science. My m
 [Github page](https://github.com/xiw019)
 
 I am a fourth year undegraduate student at UCSD ERC. My major is Cognitive Science, specialized in Machine Learning and Neural computation and I also minor in Computer Science. My interest of study is neural networks and models of recommender systems. In terms of hobby, I like cycling and archery. I am a member of UCSD cycling team. I also like PC Diying, I built a lot PCs for fun or for my friends. 
+
+### **Moises Ruiz** ###
+
+[Github page](https://github.com/Moru4)
+
+I am a third year undergraduate student at UCSD majoring in Math-Computer Science. My academic interest is software engineering. I'm from Los Angeles and I'm a huge soccer fan. I played soccer throughout highschool, and although I have not played in a while, I plan on starting to play again. However, I still enjoy watching soccer games, especially on the weekends. I also enjoy watching tv shows, playing video games, and playing other sports like basketball.
