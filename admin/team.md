@@ -25,4 +25,4 @@ I am a fourth year undergraduate student at UCSD majoring in applied mathematics
 ### **Vivian Dang** ###
 [Github page](https://github.com/vtdangg)
 
-I'm a 3rd year majoring in Math-CS from Revelle College. I am interested in software engineering and programming. Some of my hobbies and interests outside of school include working out and running, trying out new recipes to cook, reading, and watching sunsets. I also love sight seeing and exploring new places.
+I'm a 3rd year undergraduate student majoring in Math-CS at Revelle College. I am interested in software engineering and programming. Some of my hobbies and interests outside of school include working out and running, trying out new recipes to cook, reading, and watching sunsets. I also love sight seeing and exploring new places. 
