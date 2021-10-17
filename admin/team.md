@@ -53,3 +53,10 @@ I am a fourth year undergraduate student studying Computer Engineering at UCSD. 
 [Github page](https://github.com/t6wang)
 
 I am a fourth year undergraduate student at UCSD studying mathematics-computer science and management science. My professional interest is software engineering. During my free time, I am passionate about watching team sports and playing lacrosse. I also enjoy exploring new music and everything outdoor such as going on new hikes as well as exploring new food places and trying out new drink recipes!
+
+### **Milo Bougetz-Aulbach** ###
+
+[Github page](https://github.com/mbougetz)
+
+I am a fourth year undergraduate student majoring in Math-Computer Science. My main interest is in software development, especially for music-related software. I'm from Los Angeles and am an electronic musician/guitarist and writer. I'm a huge fan of many different kinds of music (especially breakcore and metal) and am also majorly passionate about fantasy fiction; my current favorite book is *The Name of the Wind* by Patrick Rothfuss and my current favorite series is *The Gentleman Bastards* by Scott Lynch.
+
