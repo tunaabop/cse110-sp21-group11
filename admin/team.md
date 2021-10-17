@@ -60,3 +60,8 @@ I am a fourth year undergraduate student at UCSD studying mathematics-computer s
 
 I am a fourth year undergraduate student majoring in Math-Computer Science. My main interest is in software development, especially for music-related software. I'm from Los Angeles and am an electronic musician/guitarist and writer. I'm a huge fan of many different kinds of music (especially breakcore and metal) and am also majorly passionate about fantasy fiction; my current favorite book is *The Name of the Wind* by Patrick Rothfuss and my current favorite series is *The Gentleman Bastards* by Scott Lynch.
 
+### **Xianglong Wang** ###
+
+[Github page](https://github.com/xiw019)
+
+I am a fourth year undegraduate student at UCSD ERC. My major is Cognitive Science, specialized in Machine Learning and Neural computation and I also minor in Computer Science. My interest of study is neural networks and models of recommender systems. In terms of hobby, I like cycling and archery. I am a member of UCSD cycling team. I also like PC Diying, I built a lot PCs for fun or for my friends. 
