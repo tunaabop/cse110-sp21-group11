@@ -6,7 +6,7 @@ Team #: 11
 Team Name: He11's Kitchen  
 Meeting start time: 3:00PM  
 Meeting end time: 4:36PM
-Meeting location: Virtual; Zoom.  
+Meeting location: Virtual; Zoom.    
 Type of meeting: Brainstorm
 
 ## Agenda:
@@ -16,7 +16,7 @@ Type of meeting: Brainstorm
 
 ## Attendance:
 ### Present:
-Donovan, Yekaterina, Moises, Tina, Vivian, Xianlong, Zedian, Ashwin, Milo (All members)
+Donovan, Yekaterina, Moises, Tina, Vivian, Xianglong, Zedian, Ashwin, Milo
 ### Absent:
 Jingtian
 
