@@ -5,12 +5,12 @@
 Team #: 11  
 Team Name: He11's Kitchen  
 Meeting start time: 3:00PM  
-Meeting end time: 4:36PM
+Meeting end time: 4:36PM  
 Meeting location: Virtual; Zoom.    
 Type of meeting: Brainstorm
 
 ## Agenda:
-- Genearl Brainstorming via Miro
+- General Brainstorming via Miro
 - UI/UX brainstorming via Figma
 - Start user personas
 
