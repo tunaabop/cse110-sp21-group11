@@ -16,9 +16,9 @@ Type of meeting: Brainstorm
 
 ## Attendance:
 ### Present:
-Donovan, Yekaterina, Moises, Tina, Vivian, Xianglong, Zedian, Ashwin, Milo
+Donovan, Yekaterina, Moises, Tina, Vivian, Xianglong, Zedian, Ashwin, Milo, Jingtian
 ### Absent:
-Jingtian
+(None)
 
 ## Meeting Events (See Miro/Figma pages/screenshots for full details):
 - Figma design brainstorming:
