@@ -5,20 +5,20 @@
 Team #: 11  
 Team Name: He11's Kitchen  
 Meeting start time: 3:00PM  
-Meeting end time: 4:36PM
-Meeting location: Virtual; Zoom.  
+Meeting end time: 4:36PM  
+Meeting location: Virtual; Zoom.    
 Type of meeting: Brainstorm
 
 ## Agenda:
-- Genearl Brainstorming via Miro
+- General Brainstorming via Miro
 - UI/UX brainstorming via Figma
 - Start user personas
 
 ## Attendance:
 ### Present:
-Donovan, Yekaterina, Moises, Tina, Vivian, Xianlong, Zedian, Ashwin, Milo (All members)
+Donovan, Yekaterina, Moises, Tina, Vivian, Xianglong, Zedian, Ashwin, Milo, Jingtian
 ### Absent:
-Jingtian
+(None)
 
 ## Meeting Events (See Miro/Figma pages/screenshots for full details):
 - Figma design brainstorming:
