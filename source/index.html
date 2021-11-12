@@ -7,6 +7,22 @@
    <!-- <script src="/website.js" type="module"></script>
     <script src="/main.js" type="module"></script> -->
     <link rel="stylesheet" href="\source\mainWebsite.css">
+
+    <!-- each js file has a style element that will be used here when the expanded page is rendered-->
+    <script src="card.js" type="module"></script>
+    <script src="cardCarousel.js" type="module"></script>
+    <script src="cardExpand.js" type="module"></script>
+    <script src="breakfastExpand.js" type="module"></script>
+    <script src="lunchExpand.js" type="module"></script>
+    <script src="dinnerExpand.js" type="module"></script>
+    <script src="dessertExpand.js" type="module"></script>
+    <script src="snackExpand.js" type="module"></script>
+    <script src="appetizerExpand.js" type="module"></script>
+    <script src="mealPrepExpand.js" type="module"></script>
+    <script src="kitchenExpand.js" type="module"></script>
+    <script src="cookingExpand.js" type="module"></script>
+    <script src="cuttungExpand.js" type="module"></script>
+    <script src="sanitationExpand.js" type="module"></script>
 </head>
 
 <body>
@@ -74,53 +90,83 @@
 
         </header>
 <!--
+    // recipes that show up on main page when loaded, shadow dom
         <section class="section-recipes-display">
             <div class="recipes-wrapper">
+                <recipe-card>
+                    #shadow-root(open)
+                    <article>
+                        <img/> 
+                        <p class="title"> </p>
+                        <p class="pricePerServing"> </p>
+                        <div class="rating"> </div>
+                        <time> extract recipe by using maxReadyTime</time>
+                        <p class="ingredients"> </p>
+                    </article>
+                </recipe-card>
             </div>
         </section>
 
-        <section class="section-recipes-expand-page">
+    //use js files to populate these here:
+    //this section will be for the expanded recipe page, shadow dom
+    //display will be in css - will enable you to hide sections of the html and then display them if needed
+        <section class="section-recipes-expand-page display">
             <recipes-expand-page> </recipes-expand-page>
         </section>"
 
+    //this section will be for the breakfast page that will render when you click "Breakfast" under recipes
         <section class="recipes-breakfast-expand-page">
-
+            <breakfast-expand-page> </breakfast-expand-page>
         </section>
 
+        //for the lunch page that will render when you click "lunch" under recipes
         <section class="recipes-lunch-expand-page">
-            
+            <lunch-expand-page> </lunch-expand-page>
         </section>
 
+        //for the dinner page that will render when you click "dinner" under recipes
         <section class="recipes-dinner-expand-page">
-            
+            <dinner-expand-page> </dinner-expand-page>
         </section>
 
+        //for the desserts page that will render when you click "dessert" under recipes
         <section class="recipes-dessert-expand-page">
-            
+            <dessert-expand-page> </dessert-expand-page>
         </section>
 
+        //for the snacks page that will render when you click "snacks" under recipes
         <section class="recipes-snacks-expand-page">
-            
+            <snacks-expand-page> </snacks-expand-page>
         </section>
 
+        //for the appetizers page that will render when you click "appetizers" under recipes
+        <section class="recipes-appetizers-expand-page">
+            <appetizers-expand-page> </appetizers-expand-page>
+        </section>
+
+        //for the meal prep page that will render when you click "mealprep" under How-To/Techniques
         <section class="howTo-mealprep-expand-page">
-            
+            <mealPrep-expand-page> </mealPrep-expand-page>
         </section>
 
+        //for the kitchen equipment page that will render when you click "kitchen equipment" under How-to/Techniques
         <section class="howTo-kitchen-expand-page">
-            
+            <kitchen-expand-page> </kitchen-expand-page>
         </section>
 
+        //for the cooking techniques page that will render when you click "cooking techniques" under How-to/Techniques
         <section class="howTo-cooking-expand-page">
-            
+            <cooking-expand-page> </cooking-expand-page>
         </section>
 
+        //for the cutting techniques page that will render when you click "cutting techniques" under How-to/Techniques
         <section class="howTo-cutting-expand-page">
-            
+            <cutting-expand-page> </cutting-expand-page>
         </section>
 
+        //for the sanitation page that will render when you click "sanitation" under How-to/Techniques
         <section class="howTo-sanitation-expand-page">
-            
+            <sanitation-expand-page> </sanitation-expand-page>
         </section>
 -->
 
