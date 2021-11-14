@@ -1,4 +1,4 @@
-import { Router } from "./router";
+
 class expandCard {
     static routes = {};
     registerCard = (page, func) => {
