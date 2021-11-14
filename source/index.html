@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> He11's Kitchen </title>
+   <!-- <script src="/website.js" type="module"></script>
+    <script src="/main.js" type="module"></script> -->
+    <link rel="stylesheet" href="mainWebsite.css">
+    <link rel="stylesheet" href="card.css">
+
+    <!-- each js file has a style element that will be used here when the expanded page is rendered-->
+    <!-- <script src="card.js" type="module"></script>
+    <script src="cardCarousel.js" type="module"></script>
+    <script src="cardExpand.js" type="module"></script>
+    <script src="breakfastExpand.js" type="module"></script>
+    <script src="lunchExpand.js" type="module"></script>
+    <script src="dinnerExpand.js" type="module"></script>
+    <script src="dessertExpand.js" type="module"></script>
+    <script src="snackExpand.js" type="module"></script>
+    <script src="appetizerExpand.js" type="module"></script>
+    <script src="mealPrepExpand.js" type="module"></script>
+    <script src="kitchenExpand.js" type="module"></script>
+    <script src="cookingExpand.js" type="module"></script>
+    <script src="cuttungExpand.js" type="module"></script>
+    <script src="sanitationExpand.js" type="module"></script>
+    -->
+</head>
+
+<body>
+    <main>
+        <header>
+            <section class="top-bar">
+            <nav>
+                <!-- start nav bar -->
+                <ul>
+                    <li> <a href="home"> Home </a></li>
+                    <li> <a href="recipes"> Recipes </a>
+                    
+                    <!-- Recipes Dropdown -->
+                        <ul class="dropdown">
+                            <li><a href=""> Breakfast </a></li>
+                                <!-- another dropdown for categorized breakfasts-->
+                                <!-- <ul>
+                                    <li><a href=""> Sweet </a></li>
+                                    <li><a href=""> Savory </a></li>
+                                </ul> -->
+                            <li><a href=""> Lunch </a></li>
+                            <li><a href=""> Dinner </a></li>
+                            <li><a href=""> Snacks </a></li>
+                            <li><a href=""> Dessert </a></li>
+                            <li><a href=""> Appetizer </a></li>
+                        <!-- End Recipes Dropdown-->
+                        </ul>
+                <!-- End recipes nav-->
+                </li>
+                    <li> <a href="how-tos"> How-To's/Techniques </a>
+                        <ul class="dropdown">
+                            <li><a href=""> Meal Prep </a></li>
+                            <li><a href=""> Kitchen Equipment </a></li>
+                            <li><a href=""> Cooking Techniques </a></li>
+                                <!-- another dropdown for categorized breakfasts-->
+                                <!-- <ul>
+                                    <li><a href=""> Roasting </a></li>
+                                    <li><a href=""> Sauteeing </a></li>
+                                </ul> -->
+                            <li><a href=""> Cutting Techniques </a></li>
+                            <li><a href=""> Sanitation </a></li>
+                        <!-- End how-to's Dropdown-->
+                        </ul>
+                    
+                        <!-- end how-tos nav bar-->
+                    </li>
+
+                <!-- end nav bar -->
+                </ul>
+
+            </nav>
+            <input type="text" placeholder="search here!" id="search"/>
+            <button id="search-btn"> <img src="images/search.png"> </button>
+        </section>
+
+            <section class="hero">
+                <div class="hero-image">
+                    <h1> He11's Kitchen </h1>
+                    <h2> Easy and quick recipes. Delicious, too. </h2>
+                </div>
+                <div class="featured-inner">
+                    <!-- <h2> Featured recipe of the week! </h2> -->
+                </div>
+            </section>
+
+        </header>
+
+    <!-- recipes that show up on main page when loaded, shadow dom -->
+        <section class="section-recipes-display">
+            <div class="recipes-wrapper">
+                <!-- <recipe-block> -->
+                    <article class="recipe-card">
+                        <img src="images/mac.jpg" class="card-image"> 
+                        <p class="title"> BEST Homemade Mac and Cheese </p>
+                        <p class="recipeTag"> Comfort Food </p>
+                        <div class="rating-time"> 4.9 
+                            <img src="images/5-stars-red.jpeg" class="rating">
+                            <img src="images/time-logo.png" class="time">
+                            <p> 60 min </p>
+                        </div>
+                    </article>
+                <!-- </recipe-block>
+                <recipe-block> -->
+                    <article class="recipe-card">
+                        <img class="card-image" src="images/risotto.jpg"> 
+                        <p class="title"> Miso Sweet Potato Risotto </p>
+                        <p class="recipeTag"> Quick Dinners </p>
+                        <div class="rating-time"> 4.6 
+                            <img src="images/5-stars-red.jpeg" class="rating">
+                            <img src="images/time-logo.png" class="time">
+                            <p> 45 min</p>
+                        </div>
+                    </article>
+                <!-- </recipe-block>
+                <recipe-block> -->
+                    <article class="recipe-card">
+                        <img src="images/dumpling.jpg" class="card-image"> 
+                        <p class="title"> Shrimp and Pork Chive Dumplings </p>
+                        <p class="recipeTag"> Comfort Food </p>
+                        <div class="rating-time"> 4.8 
+                            <img src="images/5-stars-red.jpeg" class="rating">
+                            <img src="images/time-logo.png" class="time">
+                            <p> 50 min </p>
+                        </div>
+                    </article>                          
+            </div>
+        </section>
+    <!---
+    //use js files to populate these here:
+    //this section will be for the expanded recipe page, shadow dom
+    //display will be in css - will enable you to hide sections of the html and then display them if needed
+        <section class="section-recipes-expand-page display">
+            <recipes-expand-page> </recipes-expand-page>
+        </section>"
+
+    //this section will be for the breakfast page that will render when you click "Breakfast" under recipes
+        <section class="recipes-breakfast-expand-page">
+            <breakfast-expand-page> </breakfast-expand-page>
+        </section>
+
+        //for the lunch page that will render when you click "lunch" under recipes
+        <section class="recipes-lunch-expand-page">
+            <lunch-expand-page> </lunch-expand-page>
+        </section>
+
+        //for the dinner page that will render when you click "dinner" under recipes
+        <section class="recipes-dinner-expand-page">
+            <dinner-expand-page> </dinner-expand-page>
+        </section>
+
+        //for the desserts page that will render when you click "dessert" under recipes
+        <section class="recipes-dessert-expand-page">
+            <dessert-expand-page> </dessert-expand-page>
+        </section>
+
+        //for the snacks page that will render when you click "snacks" under recipes
+        <section class="recipes-snacks-expand-page">
+            <snacks-expand-page> </snacks-expand-page>
+        </section>
+
+        //for the appetizers page that will render when you click "appetizers" under recipes
+        <section class="recipes-appetizers-expand-page">
+            <appetizers-expand-page> </appetizers-expand-page>
+        </section>
+
+        //for the meal prep page that will render when you click "mealprep" under How-To/Techniques
+        <section class="howTo-mealprep-expand-page">
+            <mealPrep-expand-page> </mealPrep-expand-page>
+        </section>
+
+        //for the kitchen equipment page that will render when you click "kitchen equipment" under How-to/Techniques
+        <section class="howTo-kitchen-expand-page">
+            <kitchen-expand-page> </kitchen-expand-page>
+        </section>
+
+        //for the cooking techniques page that will render when you click "cooking techniques" under How-to/Techniques
+        <section class="howTo-cooking-expand-page">
+            <cooking-expand-page> </cooking-expand-page>
+        </section>
+
+        //for the cutting techniques page that will render when you click "cutting techniques" under How-to/Techniques
+        <section class="howTo-cutting-expand-page">
+            <cutting-expand-page> </cutting-expand-page>
+        </section>
+
+        //for the sanitation page that will render when you click "sanitation" under How-to/Techniques
+        <section class="howTo-sanitation-expand-page">
+            <sanitation-expand-page> </sanitation-expand-page>
+        </section>
+-->
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
