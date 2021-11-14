@@ -105,6 +105,10 @@ li a:hover {
   background-color: #3b3838;
 }
 
+.top-bar li i {
+  color: #f5ebc9;
+}
+
 .search-box {
   display: flex;
   margin-top: 15px;
