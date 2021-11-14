@@ -6,10 +6,11 @@
     <title> He11's Kitchen </title>
    <!-- <script src="/website.js" type="module"></script>
     <script src="/main.js" type="module"></script> -->
-    <link rel="stylesheet" href="\source\mainWebsite.css">
+    <link rel="stylesheet" href="mainWebsite.css">
+    <link rel="stylesheet" href="card.css">
 
     <!-- each js file has a style element that will be used here when the expanded page is rendered-->
-    <script src="card.js" type="module"></script>
+    <!-- <script src="card.js" type="module"></script>
     <script src="cardCarousel.js" type="module"></script>
     <script src="cardExpand.js" type="module"></script>
     <script src="breakfastExpand.js" type="module"></script>
@@ -23,6 +24,7 @@
     <script src="cookingExpand.js" type="module"></script>
     <script src="cuttungExpand.js" type="module"></script>
     <script src="sanitationExpand.js" type="module"></script>
+    -->
 </head>
 
 <body>
@@ -89,24 +91,48 @@
             </section>
 
         </header>
-<!--
-    // recipes that show up on main page when loaded, shadow dom
+
+    <!-- recipes that show up on main page when loaded, shadow dom -->
         <section class="section-recipes-display">
             <div class="recipes-wrapper">
-                <recipe-card>
-                    #shadow-root(open)
-                    <article>
-                        <img/> 
-                        <p class="title"> </p>
-                        <p class="pricePerServing"> </p>
-                        <div class="rating"> </div>
-                        <time> extract recipe by using maxReadyTime</time>
-                        <p class="ingredients"> </p>
+                <!-- <recipe-block> -->
+                    <article class="recipe-card">
+                        <img src="images/mac.jpg" class="card-image"> 
+                        <p class="title"> BEST Homemade Mac and Cheese </p>
+                        <p class="recipeTag"> Comfort Food </p>
+                        <div class="rating-time"> 4.9 
+                            <img src="images/5-stars-red.jpeg" class="rating">
+                            <img src="images/time-logo.png" class="time">
+                            <p> 60 min </p>
+                        </div>
                     </article>
-                </recipe-card>
+                <!-- </recipe-block>
+                <recipe-block> -->
+                    <article class="recipe-card">
+                        <img class="card-image" src="images/risotto.jpg"> 
+                        <p class="title"> Miso Sweet Potato Risotto </p>
+                        <p class="recipeTag"> Quick Dinners </p>
+                        <div class="rating-time"> 4.6 
+                            <img src="images/5-stars-red.jpeg" class="rating">
+                            <img src="images/time-logo.png" class="time">
+                            <p> 45 min</p>
+                        </div>
+                    </article>
+                <!-- </recipe-block>
+                <recipe-block> -->
+                    <article class="recipe-card">
+                        <img src="images/dumpling.jpg" class="card-image"> 
+                        <p class="title"> Shrimp and Pork Chive Dumplings </p>
+                        <p class="recipeTag"> Comfort Food </p>
+                        <div class="rating-time"> 4.8 
+                            <img src="images/5-stars-red.jpeg" class="rating">
+                            <img src="images/time-logo.png" class="time">
+                            <p> 50 min </p>
+                        </div>
+                    </article>                          
             </div>
         </section>
-
+    <!---
     //use js files to populate these here:
     //this section will be for the expanded recipe page, shadow dom
     //display will be in css - will enable you to hide sections of the html and then display them if needed
