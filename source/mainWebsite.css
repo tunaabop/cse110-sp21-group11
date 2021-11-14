@@ -4,10 +4,14 @@
   font-family: Didot;
 }
 
+body {
+  width: 100vw;
+}
+
 nav {
   display: flex;
   justify-content: flex-start;
-  width: 100vw;
+  width: 50vw;
 }
 
 ul {
@@ -19,7 +23,7 @@ ul {
 }
 
 li {
-  padding: 10px;
+  padding: 0.55rem;
   display: inline-block;
 }
 
@@ -30,13 +34,17 @@ ul li ul {
   margin-top: 0.5rem;
   position: absolute;
   display: none;
-  width: 12rem;
+  width: 13rem;
+  cursor: pointer;
 }
 
 ul li ul li {
-  width: 100%;
-  padding-left: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 11.9rem;
+  /** box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; **/
+}
+
+ul li ul li:hover {
+  background-color: grey;
 }
 
 ul li:hover > ul,
@@ -44,6 +52,7 @@ ul li ul:hover {
   visibility: visible;
   opacity: 1;
   display: block;
+  text-decoration: 3px underline #f55442;
 }
 
 nav a {
@@ -52,10 +61,11 @@ nav a {
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 li a:hover {
-  background-color: #615f5f;
+  text-decoration: 3px underline #f55442;
 }
 
 .hero {
@@ -90,28 +100,84 @@ li a:hover {
 .top-bar {
   display: flex;
   justify-content: space-around;
+  width: 100%;
   overflow: hidden;
   background-color: #3b3838;
 }
 
-.top-bar input {
-  padding: 10px;
-  height: 10px;
-  margin-top: 25px;
-  border: none;
-}
-.top-bar button {
-  padding: 10px;
-  margin: 20px;
-}
-
-#search-btn img {
-  display: block;
-  height: 18px;
-  width: 18px;
-}
-
-.top-bar img {
+.search-box {
+  display: flex;
+  margin-top: 15px;
+  max-width: 240px;
   height: 40px;
-  width: 120px;
+  background: white;
+  border-radius: 40px;
+}
+
+.search-box input {
+  padding: 15px;
+  width: 100%;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: white;
+  font-size: 16px;
+}
+
+#icon {
+  background: #3b3838;
+  color: white;
+  width: 43px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#icon:hover {
+  transform: scale(1.07);
+  transition: all 0.3s ease-out;
+}
+
+#icon i {
+  padding: 6.5px;
+  transition: 0.3s;
+}
+
+.section-recipes-display h1 {
+  display: flex;
+  width: 450px;
+  font-size: 1.8em;
+  color: #402a26;
+  text-decoration: 3px underline #ffcb3d;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  padding: 1rem;
+}
+
+.section-recipes-display h1:hover {
+  color: #2e4d15;
+  text-decoration: 3px underline #f55442;
+  cursor: pointer;
+}
+
+.section-recipes-display h1 i {
+  float: right;
+  cursor: pointer;
+  margin: 5px;
+  height: 45px;
+  width: 45px;
+  text-decoration: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
