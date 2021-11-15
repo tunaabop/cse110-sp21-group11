@@ -1,0 +1,48 @@
+# Updated from template.yml
+# Workflow will clean install of node dependencies, cache/restore them, build and test across different versions of node
+
+name: Node.js CI
+
+on: [push]
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v2
+    - name: npm install and build webpack
+      run: |
+        npm install
+        npm run build
+    - uses: actions/upload-artifact@main
+        with:
+          name: webpack artifacts
+          path: public/
+  test:
+  
+    runs-on: ubuntu-latest
+    - uses: actions/download-artifact@main
+      with:
+        name: webpack artifacts
+        path: public
+    - name: npm install, and test
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-2016]
+        node-version: [12.x, 14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, and test
+      run: |
+        npm install
+        npm test
+      env:
+        CI: true
