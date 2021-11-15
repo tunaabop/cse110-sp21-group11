@@ -68,6 +68,11 @@ li a:hover {
   text-decoration: 3px underline #f55442;
 }
 
+#logo-img {
+  object-fit: cover;
+  height: 80px;
+}
+
 .hero {
   /*size the hero section */
   width: 100vw;
@@ -109,26 +114,53 @@ li a:hover {
   color: #f5ebc9;
 }
 
+.top-bar p {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: 8px;
+  width: 280px;
+  padding: 1rem;
+}
+
 .search-box {
   display: flex;
   margin-top: 15px;
-  max-width: 240px;
+  max-width: 200px;
   height: 40px;
-  background: white;
-  border-radius: 40px;
 }
 
-.search-box input {
+.hero-search input {
   padding: 15px;
   width: 100%;
   border-radius: 30px;
   outline: none;
   border: none;
-  background: white;
   font-size: 16px;
 }
 
+.search-box input {
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: white;
+  opacity: 0.6;
+}
+
 #icon {
+  object-fit: cover;
+  padding: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  opacity: 0.6;
+}
+
+#hero-icon {
   background: #3b3838;
   color: white;
   width: 43px;
@@ -138,14 +170,25 @@ li a:hover {
   margin: 5px;
 }
 
-#icon:hover {
+#hero-icon:hover {
   transform: scale(1.07);
   transition: all 0.3s ease-out;
 }
 
-#icon i {
+#icon i,
+#hero-icon i {
   padding: 6.5px;
   transition: 0.3s;
+}
+
+.hero-search {
+  margin: auto;
+  display: flex;
+  max-width: 350px;
+  height: 40px;
+  background: white;
+  opacity: 0.45;
+  border-radius: 10px;
 }
 
 .section-recipes-display h1 {

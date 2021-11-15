@@ -34,6 +34,7 @@
             <section class="top-bar">
             <nav>
                 <!-- start nav bar -->
+                <img src="images/logo.png" id="logo-img">
                 <ul>
                     <li> <a href="home"> Home </a></li>
                     <li> <a href="recipes"> Recipes </a>
@@ -77,8 +78,8 @@
 
                 <!-- end nav bar -->
                 </ul>
-
             </nav>
+            <p> He<span style="color: red">11</span>'s <span style="color: #f1dcb4">Kitchen </span></p> 
                 <div class="search-box">
                     <input type="text" placeholder=" Type here...."/>
                     <label for ="" id="icon">
@@ -89,11 +90,12 @@
 
             <section class="hero">
                 <div class="hero-image">
-                    <h1> He11's Kitchen </h1>
-                    <h2> Easy and quick recipes. Delicious, too. </h2>
                 </div>
-                <div class="featured-inner">
-                    <!-- <h2> Featured recipe of the week! </h2> -->
+                <div class="hero-search">
+                    <input type="text" placeholder="Search here...."/>
+                    <label for ="" id="hero-icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
                 </div>
             </section>
 
@@ -104,42 +106,46 @@
                 <h1> Easy Recipes under 60 Minutes 
                     <i class="fa fa-long-arrow-right"></i>
                 </h1>
+                <!-- this div class of recipes-wrapper will be the carousel element-->
             <div class="recipes-wrapper">
-                <!-- <recipe-block> -->
-                    <article>
-                        <img src="images/mac.jpg" class="card-image"> 
-                        <p class="title"> BEST Homemade Mac and Cheese </p>
-                        <p class="recipeTag"> Comfort Food </p>
-                        <div class="rating-time"> 4.9 
-                            <img src="images/5-stars-red.jpeg" class="rating">
-                            <img src="images/time-logo.png" class="time">
-                            <p> 60 min </p>
-                        </div>
-                    </article>
-                <!-- </recipe-block>
-                <recipe-block> -->
-                    <article>
-                        <img class="card-image" src="images/risotto.jpg"> 
-                        <p class="title"> Miso Sweet Potato Risotto </p>
-                        <p class="recipeTag"> Quick Dinners </p>
-                        <div class="rating-time"> 4.6 
-                            <img src="images/5-stars-red.jpeg" class="rating">
-                            <img src="images/time-logo.png" class="time">
-                            <p> 45 min</p>
-                        </div>
-                    </article>
-                <!-- </recipe-block>
-                <recipe-block> -->
-                    <article>
-                        <img src="images/dumpling.jpg" class="card-image"> 
-                        <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                        <p class="recipeTag"> Comfort Food </p>
-                        <div class="rating-time"> 4.8 
-                            <img src="images/5-stars-red.jpeg" class="rating">
-                            <img src="images/time-logo.png" class="time">
-                            <p> 50 min </p>
-                        </div>
-                    </article>                          
+                <!-- <recipe-carousel>
+                    <recipe-card> -->
+                        <article>
+                            <img src="images/mac.jpg" class="card-image"> 
+                            <p class="title"> BEST Homemade Mac and Cheese </p>
+                            <p class="recipeTag"> Comfort Food </p>
+                            <div class="rating-time"> 4.9 
+                                <img src="images/5-stars-red.jpeg" class="rating">
+                                <img src="images/time-logo.png" class="time">
+                                <p> 60 min </p>
+                            </div>
+                        </article>
+                    <!-- </recipe-card>
+                    <recipe-card> -->
+                        <article>
+                            <img class="card-image" src="images/risotto.jpg"> 
+                            <p class="title"> Miso Sweet Potato Risotto </p>
+                            <p class="recipeTag"> Quick Dinners </p>
+                            <div class="rating-time"> 4.6 
+                                <img src="images/5-stars-red.jpeg" class="rating">
+                                <img src="images/time-logo.png" class="time">
+                                <p> 45 min</p>
+                            </div>
+                        </article>
+                        <!-- </recipe-card>
+                        <recipe-card> -->
+                        <article>
+                            <img src="images/dumpling.jpg" class="card-image"> 
+                            <p class="title"> Shrimp and Pork Chive Dumplings </p>
+                            <p class="recipeTag"> Comfort Food </p>
+                            <div class="rating-time"> 4.8 
+                                <img src="images/5-stars-red.jpeg" class="rating">
+                                <img src="images/time-logo.png" class="time">
+                                <p> 50 min </p>
+                            </div>
+                        </article>   
+                        <!-- </recipe-card>
+                </recipe-carousel> -->
             </div>
         </section>
     <!---
