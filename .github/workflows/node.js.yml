@@ -13,7 +13,7 @@ jobs:
     - name: Install modules
       run: yarn
     - name: Run ESLint
-      run: npm eslint
+      run: npm run eslint
 
       
   test:
