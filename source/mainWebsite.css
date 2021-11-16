@@ -181,3 +181,59 @@ li a:hover {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* the top recipe caraosuel */
+.recipes-wrapper {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* the back and forward buttons */
+.back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  height: 20px;
+  margin-top: -23px;
+  padding: 17px;
+  border-radius: 50px;
+  color: black;
+  font-size: 20px;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+/* place forward button to right of page */
+.forward {
+  right: -22mm;
+}
+
+/* button transition features */
+.back:hover, .forward:hover {
+  color: #df342f;
+
+}
+
+.back:before, .back:after,
+.forward:before, .forward:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: lightgrey;
+  transition: all .35s;
+}
+
+.back:before, .forward:before {
+  opacity: .5;
+}
+
+.back:after, .forward:after {
+  transition-delay: .25s;
+}
+
+.back:hover:before, .back:hover:after,
+.forward:hover:before, .forward:hover:after {
+  top: 0;
+}
