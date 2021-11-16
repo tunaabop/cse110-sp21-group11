@@ -4,6 +4,12 @@
   font-family: Didot;
 }
 
+.hidden {
+  display: none;
+}
+
+
+
 nav {
   display: flex;
   justify-content: flex-start;
@@ -115,3 +121,5 @@ li a:hover {
   height: 40px;
   width: 120px;
 }
+
+

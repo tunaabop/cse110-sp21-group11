@@ -1,12 +1,28 @@
 /** section:not(section.display) {
   display: none;
 } **/
+
+.recipes-wrapper card-carousel  {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(12rem, 16rem));
+  grid-gap: 10rem;
+  justify-content: center;
+}
+
+
 .recipes-wrapper {
   display: grid;
   grid-template-columns: repeat(3, minmax(12rem, 16rem));
   grid-gap: 4.3rem;
   justify-content: center;
 }
+
+.hidden {
+  display: none;
+}
+
+
 
 article {
   display: flex;
@@ -74,3 +90,5 @@ div.rating-time img.time {
   width: 20px;
   margin-right: 0.3rem;
 }
+
+

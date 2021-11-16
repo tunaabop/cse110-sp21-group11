@@ -7,6 +7,7 @@ class Card extends HTMLElement{
     }
 
     set data(cardData){
+        console.log("Setting card data");
         if(!cardData) return; //Exit function if data DNE
 
 
@@ -24,6 +25,8 @@ class Card extends HTMLElement{
             grid-gap: 4.3rem;
             justify-content: center;
           }
+
+          
           
           article {
             display: flex;
@@ -72,6 +75,13 @@ class Card extends HTMLElement{
             margin-bottom: 0.4rem;
           }
           
+          div.rating > img {
+            display: inline-block;
+            object-fit: scale-down;
+            width: 100px;
+            margin-right: 3rem;
+          }
+
           div.rating-time {
             margin-top: 0.4rem;
             margin-bottom: 0.4rem;
@@ -90,7 +100,13 @@ class Card extends HTMLElement{
             object-fit: scale-down;
             width: 20px;
             margin-right: 0.3rem;
-          }`;
+          }
+          
+          .hidden {
+            display: none;
+          }
+          
+          `;
 
       
         //Recipe Title
@@ -119,10 +135,23 @@ class Card extends HTMLElement{
         rating.classList.add('rating');
 
         //TEMP VAL; number of stars to display
-        rating.innerHTML = `<img src="source\images\5-stars-red.jpeg" alt="5 stars"></img>`;
+        rating.innerHTML = `
+        <span>${ratingValue}</span>
+        <img src="images\\5-stars-red.jpeg" alt="5 stars"></img>
+        `;
+
+        if (numRatings != 0) {
+          rating.innerHTML += `<span>(${numRatings})</span>`;
+        }
+        //Maybe do 
+        else {
+        rating.innerHTML = `
+          <span>No Reviews</span>
+        `;
+        }
 
 
-        //add # stars
+        //TODO: Change picture based on # of stars
 
 
         //Recipe cook time
@@ -131,10 +160,12 @@ class Card extends HTMLElement{
         time.innerText = ""; //TEMP VAL;convert time from API into readable string
 
         //Recipe ingredients
-        const ingredientsList = "12,000 whole cloves of garlic"; //TEMP VAL; Get list of ingredients, store here as plaintext
+        const ingredientsList = "- 12,000 whole cloves of garlic\n- 42 cups of diced onions\n(...)"; //TEMP VAL; Get list of ingredients, store here as plaintext
         const ingredients = document.createElement('p');
         ingredients.classList.add('ingredients');
         ingredients.innerText = ingredientsList;
+
+        //TODO: Add recipe tag to card
 
 
         //Add elements to recipe card
