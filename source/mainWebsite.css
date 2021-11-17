@@ -108,11 +108,6 @@ li a:hover {
   width: 100%;
   overflow: hidden;
   background-color: #3b3838;
-  /* Donovan's CSS */
-  position: fixed;
-  z-index: 1;
-  opacity: 0.9;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .top-bar li i {
