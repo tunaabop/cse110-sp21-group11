@@ -4,6 +4,10 @@
   font-family: Didot;
 }
 
+.hide {
+  display: none;
+}
+
 body {
   width: 100vw;
 }
@@ -87,19 +91,6 @@ li a:hover {
   background-repeat: no repeat;
   background-position: center center;
   background-attachment: fixed;
-}
-
-.hero h1 {
-  font-size: 4.5em;
-  margin-bottom: 0.7em;
-  color: white;
-  margin-left: 2em;
-}
-
-.hero h2 {
-  font-size: 1.8em;
-  color: #f5ebc9;
-  margin-left: 5em;
 }
 
 .top-bar {
