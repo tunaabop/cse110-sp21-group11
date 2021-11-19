@@ -1,8 +1,6 @@
 class Card extends HTMLElement{
     constructor(){
         super(); //Inherit from ancestor
-
-
         this.attachShadow({ mode: 'open'});
     }
 
