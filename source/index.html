@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
-    <meta charset ="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> He11's Kitchen </title>
-   <!-- <script src="/website.js" type="module"></script>
+    <!-- <script src="/website.js" type="module"></script>
     <script src="/main.js" type="module"></script> -->
     <link rel="stylesheet" href="mainWebsite.css">
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="featured.css">
     <script src="https://use.fontawesome.com/71ef81c39b.js"></script>
-
     <!-- each js file has a style element that will be used here when the expanded page is rendered-->
     <!-- <script src="card.js" type="module"></script>
     <script src="cardCarousel.js" type="module"></script>
@@ -33,76 +33,62 @@
     <main>
         <header>
             <section class="top-bar">
-            <nav>
-                <!-- start nav bar -->
-                <img src="images/logo.png" id="logo-img">
-                <ul>
-                    <li> <a href="home"> Home </a></li>
-                    <li> <a href="recipes"> Recipes </a>
+                <nav>
+                     <!-- start nav bar -->
+                    <img src="images/logo.png" id="logo-img">
+                    <ul>
+                        <li> <a href="home"> Home </a></li>
+                        <li> <a href="recipes"> Recipes </a>
                         <i class="fa fa-caret-down"></i>
-                    
-                    <!-- Recipes Dropdown -->
-                        <ul class="dropdown">
-                            <li><a href=""> Breakfast </a></li>
-                                <!-- another dropdown for categorized breakfasts-->
-                                <!-- <ul>
-                                    <li><a href=""> Sweet </a></li>
-                                    <li><a href=""> Savory </a></li>
-                                </ul> -->
-                            <li><a href=""> Lunch </a></li>
-                            <li><a href=""> Dinner </a></li>
-                            <li><a href=""> Snacks </a></li>
-                            <li><a href=""> Dessert </a></li>
-                            <li><a href=""> Appetizer </a></li>
-                        <!-- End Recipes Dropdown-->
-                        </ul>
+                        <!-- Recipes Dropdown -->
+                            <ul class="dropdown">
+                                <li><a href=""> Breakfast </a></li>
+                                <li><a href=""> Lunch </a></li>
+                                <li><a href=""> Dinner </a></li>
+                                <li><a href=""> Snacks </a></li>
+                                 <li><a href=""> Dessert </a></li>
+                            <!-- End Recipes Dropdown-->
+                            </ul>
                 <!-- End recipes nav-->
-                </li>
-                    <li> <a href="how-tos"> How-To's/Techniques </a>
+                        </li>
+                        <li> <a href="how-tos"> How-To's/Techniques </a>
                         <i class="fa fa-caret-down"></i>
-                        <ul class="dropdown">
-                            <li><a href=""> Meal Prep </a></li>
-                            <li><a href=""> Kitchen Equipment </a></li>
-                            <li><a href=""> Cooking Techniques </a></li>
-                                <!-- another dropdown for categorized breakfasts-->
-                                <!-- <ul>
-                                    <li><a href=""> Roasting </a></li>
-                                    <li><a href=""> Sauteeing </a></li>
-                                </ul> -->
-                            <li><a href=""> Cutting Techniques </a></li>
-                            <li><a href=""> Sanitation </a></li>
-                        <!-- End how-to's Dropdown-->
-                        </ul>
-                    
-                        <!-- end how-tos nav bar-->
+                            <ul class="dropdown">
+                                <li><a href=""> Meal Prep </a></li>
+                                <li><a href=""> Kitchen Equipment </a></li>
+                                <li><a href=""> Cooking Techniques </a></li>
+                                <li><a href=""> Cutting Techniques </a></li>
+                                <li><a href=""> Sanitation </a></li>
+                            <!-- End how-to's Dropdown-->
+                            </ul>
+                    <!-- end how-tos nav bar-->
                     </li>
-
                 <!-- end nav bar -->
                 </ul>
             </nav>
-            <p> He<span style="color: red">11</span>'s <span style="color: #f1dcb4">Kitchen </span></p> 
+            <!-- He11's Kitchen title on nav bar -->
+                <p> He<span style="color: red">11</span>'s <span style="color: #f1dcb4">Kitchen </span></p>
                 <div class="search-box">
-                    <input type="text" placeholder=" Type here...."/>
-                    <label for ="" id="icon">
+                    <input type="text" placeholder=" Type here...." />
+                    <label for="" id="icon">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </label>
                 </div>
+        <!-- end of top bar-->
         </section>
 
             <section class="hero">
                 <div class="hero-image">
                 </div>
                 <div class="hero-search">
-                    <input type="text" placeholder="Search here...."/>
-                    <label for ="" id="hero-icon">
+                    <input type="text" placeholder="Search here...." />
+                    <label for="" id="hero-icon">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </label>
                 </div>
             </section>
 
-        </header>
-
-    <!-- recipes that show up on main page when loaded, shadow dom -->
+      </header>
         
         <!--- featured recipe -->
 
@@ -124,210 +110,217 @@
             </a>
         </section>
                 
-
-        
+        <!-- recipes that show up on main page when loaded, shadow dom -->
         <section class="section-recipes-display">
-                <h2> Easy Recipes under 60 Minutes 
-                    <i class="fa fa-long-arrow-right"></i>
-                </h2>
-                <!-- this div class of recipes-wrapper will be the carousel element-->
+
+            <h2> Easy Recipes under 60 Minutes
+                <i class="fa fa-long-arrow-right"></i>
+            </h2>
+            <!-- this div class of recipes-wrapper will be the carousel element-->
 
             <!-- recipe carousel #1-->
 
             <div class="recipes-wrapper">
-                <!-- <recipe-carousel>
-                    <recipe-card> -->
-                        <article>
-                            <img src="images/mac.jpg" class="card-image"> 
-                            <p class="title"> BEST Homemade Mac and Cheese </p>
-                            <p class="recipeTag"> Comfort Food </p>
-                            <div class="rating-time"> 4.9 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 60 min </p>
-                            </div>
-                        </article>
-                    <!-- </recipe-card>
-                    <recipe-card> -->
-                        <article>
-                            <img class="card-image" src="images/risotto.jpg"> 
-                            <p class="title"> Miso Sweet Potato Risotto </p>
-                            <p class="recipeTag"> Quick Dinners </p>
-                            <div class="rating-time"> 4.6 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 45 min</p>
-                            </div>
-                        </article>
-                        <!-- </recipe-card>
-                        <recipe-card> -->
-                        <article>
-                            <img src="images/dumpling.jpg" class="card-image"> 
-                            <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                            <p class="recipeTag"> Comfort Food </p>
-                            <div class="rating-time"> 4.8 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 50 min </p>
-                            </div>
-                        </article>   
-                        <!-- </recipe-card>
-                </recipe-carousel> -->
+                <!-- <recipe-carousel> -->
+
+                <article>
+                    <img src="images/mac.jpg" class="card-image">
+                    <p class="title"> BEST Homemade Mac and Cheese </p>
+                    <p class="recipeTag"> Comfort Food </p>
+                    <div class="rating-time"> 4.9
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 60 min </p>
+                    </div>
+                </article>
+
+                <article>
+                    <img class="card-image" src="images/risotto.jpg">
+                    <p class="title"> Miso Sweet Potato Risotto </p>
+                    <p class="recipeTag"> Quick Dinners </p>
+                    <div class="rating-time"> 4.6
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 45 min</p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="images/dumpling.jpg" class="card-image">
+                    <p class="title"> Shrimp and Pork Chive Dumplings </p>
+                    <p class="recipeTag"> Comfort Food </p>
+                    <div class="rating-time"> 4.8
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 50 min </p>
+                    </div>
+                </article>
+                <!-- </recipe-carousel> -->
+                <a class="back">&#10094</a>
+                <a class="forward">&#10095</a>
             </div>
+
             <h2> One-Pot Meals For Less Dishes
                 <i class="fa fa-long-arrow-right"></i>
             </h2>
 
-                <!-- recipe carousel #2-->
+            <!-- recipe carousel #2-->
 
             <div class="recipes-wrapper">
-                <!-- <recipe-carousel>
-                    <recipe-card> -->
-                        <article>
-                            <img src="images/mac.jpg" class="card-image"> 
-                            <p class="title"> BEST Homemade Mac and Cheese </p>
-                            <p class="recipeTag"> Comfort Food </p>
-                            <div class="rating-time"> 4.9 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 60 min </p>
-                            </div>
-                        </article>
-                    <!-- </recipe-card>
-                    <recipe-card> -->
-                        <article>
-                            <img class="card-image" src="images/risotto.jpg"> 
-                            <p class="title"> Miso Sweet Potato Risotto </p>
-                            <p class="recipeTag"> Quick Dinners </p>
-                            <div class="rating-time"> 4.6 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 45 min</p>
-                            </div>
-                        </article>
-                        <!-- </recipe-card>
-                        <recipe-card> -->
-                        <article>
-                            <img src="images/dumpling.jpg" class="card-image"> 
-                            <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                            <p class="recipeTag"> Comfort Food </p>
-                            <div class="rating-time"> 4.8 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 50 min </p>
-                            </div>
-                        </article>   
-                        <!-- </recipe-card>
-                </recipe-carousel> -->
+                <!-- <recipe-carousel> -->
+                <article>
+                    <img src="images/mac.jpg" class="card-image">
+                    <p class="title"> BEST Homemade Mac and Cheese </p>
+                    <p class="recipeTag"> Comfort Food </p>
+                    <div class="rating-time"> 4.9
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 60 min </p>
+                    </div>
+                </article>
+
+                <article>
+                    <img class="card-image" src="images/risotto.jpg">
+                    <p class="title"> Miso Sweet Potato Risotto </p>
+                    <p class="recipeTag"> Quick Dinners </p>
+                    <div class="rating-time"> 4.6
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 45 min</p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="images/dumpling.jpg" class="card-image">
+                    <p class="title"> Shrimp and Pork Chive Dumplings </p>
+                    <p class="recipeTag"> Comfort Food </p>
+                    <div class="rating-time"> 4.8
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 50 min </p>
+                    </div>
+                </article>
+
+                <!-- </recipe-carousel> -->
+                <a class="back">&#10094</a>
+                <a class="forward">&#10095</a>
             </div>
 
             <!-- recipe carousel #3-->
 
-            <h2> Dishes to Bring to Thanksgiving Dinner
+            <h2> Dishes For Thanksgiving Dinner
                 <i class="fa fa-long-arrow-right"></i>
             </h2>
 
             <div class="recipes-wrapper">
-                <!-- <recipe-carousel>
-                    <recipe-card> -->
-                        <article>
-                            <img src="images/mac.jpg" class="card-image"> 
-                            <p class="title"> BEST Homemade Mac and Cheese </p>
-                            <p class="recipeTag"> Comfort Food </p>
-                            <div class="rating-time"> 4.9 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 60 min </p>
-                            </div>
-                        </article>
-                    <!-- </recipe-card>
-                    <recipe-card> -->
-                        <article>
-                            <img class="card-image" src="images/risotto.jpg"> 
-                            <p class="title"> Miso Sweet Potato Risotto </p>
-                            <p class="recipeTag"> Quick Dinners </p>
-                            <div class="rating-time"> 4.6 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 45 min</p>
-                            </div>
-                        </article>
-                        <!-- </recipe-card>
-                        <recipe-card> -->
-                        <article>
-                            <img src="images/dumpling.jpg" class="card-image"> 
-                            <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                            <p class="recipeTag"> Comfort Food </p>
-                            <div class="rating-time"> 4.8 
-                                <img src="images/5-stars-red.jpeg" class="rating">
-                                <img src="images/time-logo.png" class="time">
-                                <p> 50 min </p>
-                            </div>
-                        </article>   
-                        <!-- </recipe-card>
-                </recipe-carousel> -->
+                <!-- <recipe-carousel> -->
+
+                <article>
+                    <img src="images/mac.jpg" class="card-image">
+                    <p class="title"> BEST Homemade Mac and Cheese </p>
+                    <p class="recipeTag"> Comfort Food </p>
+                    <div class="rating-time"> 4.9
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 60 min </p>
+                    </div>
+                </article>
+
+                <article>
+                    <img class="card-image" src="images/risotto.jpg">
+                    <p class="title"> Miso Sweet Potato Risotto </p>
+                    <p class="recipeTag"> Quick Dinners </p>
+                    <div class="rating-time"> 4.6
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 45 min</p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="images/dumpling.jpg" class="card-image">
+                    <p class="title"> Shrimp and Pork Chive Dumplings </p>
+                    <p class="recipeTag"> Comfort Food </p>
+                    <div class="rating-time"> 4.8
+                        <img src="images/5-stars-red.jpeg" class="rating">
+                        <img src="images/time-logo.png" class="time">
+                        <p> 50 min </p>
+                    </div>
+                </article>
+
+                <!-- </recipe-carousel> -->
+                <a class="back">&#10094</a>
+                <a class="forward">&#10095</a>
             </div>
+
         </section>
-    <!---
+    <!--
     //use js files to populate these here:
     //this section will be for the expanded recipe page, shadow dom
     //display will be in css - will enable you to hide sections of the html and then display them if needed
-        <section class="section-recipes-expand-page display">
+        <section class="section-recipes-expand-page hide">
             <recipes-expand-page> </recipes-expand-page>
         </section>"
 
     //this section will be for the breakfast page that will render when you click "Breakfast" under recipes
-        <section class="recipes-breakfast-expand-page">
-            <breakfast-expand-page> </breakfast-expand-page>
+        <section class="recipes-breakfast-expand-page hide">
+            <breakfast-expand-page> 
+                #shadow-root(open)
+            <style> 
+
+            </style> 
+            put breakfast.html here
+            </breakfast-expand-page>
         </section>
 
         //for the lunch page that will render when you click "lunch" under recipes
-        <section class="recipes-lunch-expand-page">
-            <lunch-expand-page> </lunch-expand-page>
+        <section class="recipes-lunch-expand-page hide">
+            <lunch-expand-page> 
+                #shadow-root(open)
+                <style>
+
+                </style>
+                //put lunch.html here
+            </lunch-expand-page>
         </section>
 
         //for the dinner page that will render when you click "dinner" under recipes
-        <section class="recipes-dinner-expand-page">
+        <section class="recipes-dinner-expand-page hide">
             <dinner-expand-page> </dinner-expand-page>
         </section>
 
         //for the desserts page that will render when you click "dessert" under recipes
-        <section class="recipes-dessert-expand-page">
+        <section class="recipes-dessert-expand-page hide">
             <dessert-expand-page> </dessert-expand-page>
         </section>
 
         //for the snacks page that will render when you click "snacks" under recipes
-        <section class="recipes-snacks-expand-page">
+        <section class="recipes-snacks-expand-page hide">
             <snacks-expand-page> </snacks-expand-page>
         </section>
 
-        //for the appetizers page that will render when you click "appetizers" under recipes
-        <section class="recipes-appetizers-expand-page">
-            <appetizers-expand-page> </appetizers-expand-page>
-        </section>
-
         //for the meal prep page that will render when you click "mealprep" under How-To/Techniques
-        <section class="howTo-mealprep-expand-page">
+        <section class="howTo-mealprep-expand-page hide">
             <mealPrep-expand-page> </mealPrep-expand-page>
         </section>
 
         //for the kitchen equipment page that will render when you click "kitchen equipment" under How-to/Techniques
-        <section class="howTo-kitchen-expand-page">
+        <section class="howTo-kitchen-expand-page hide">
             <kitchen-expand-page> </kitchen-expand-page>
         </section>
 
         //for the cooking techniques page that will render when you click "cooking techniques" under How-to/Techniques
-        <section class="howTo-cooking-expand-page">
+        <section class="howTo-cooking-expand-page hide">
             <cooking-expand-page> </cooking-expand-page>
         </section>
 
         //for the cutting techniques page that will render when you click "cutting techniques" under How-to/Techniques
-        <section class="howTo-cutting-expand-page">
+        <section class="howTo-cutting-expand-page hide">
             <cutting-expand-page> </cutting-expand-page>
         </section>
 
         //for the sanitation page that will render when you click "sanitation" under How-to/Techniques
-        <section class="howTo-sanitation-expand-page">
+        <section class="howTo-sanitation-expand-page hide">
             <sanitation-expand-page> </sanitation-expand-page>
         </section>
 -->
@@ -342,4 +335,5 @@
         </div>
     </footer>
 </body>
+
 </html>
