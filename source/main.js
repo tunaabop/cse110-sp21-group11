@@ -1,4 +1,4 @@
-
+import { fetchParams, fetchById } from "./service/api.js";
 const recipes = []; // instead of using json files, we want recipes from the API
 const recipeData = {};  // used to access the recipe data from Spoonacular
 
@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', init);
 async function init() {
 
   console.log("initiating");
-  
     /*
     try {
       await fetchRecipes();
@@ -19,7 +18,13 @@ async function init() {
       return;
     }
     */
-
+   let params = 'query=pasta&maxFat=25&nuber=2';
+   await fetchParams(params).then(function(res){
+    const fetchedRecipes = res.results;
+    for (let i = 0; i < fetchedRecipes.length; i++) {
+      recipeData[fetchedRecipes[i].title] = fetchedRecipes[i].id;
+    }
+   })
 
     //createRecipeCards();
     //bindShowMore();
@@ -55,7 +60,7 @@ async function fetchRecipes() {
 
 // make recipe cards, add recipes cards to carousels, then append to page
 async function addRecipesToPage(){
-  console.log("Recipe number: " + recipes.length);
+  // console.log("Recipe number: " + recipes.length);
 
   //for (let i = 0; i < recipes.length; i++){
     for (let i = 0; i < 3; i++){
@@ -70,7 +75,7 @@ async function addRecipesToPage(){
     //append to page
     //document.querySelector('.recipes-wrapper').appendChild(recipeCard);
 
-    console.log("Appending " + i);
+    // console.log("Appending " + i);
     document.querySelector('.recipes-wrapper').appendChild(recipeCard);
   }
 }
