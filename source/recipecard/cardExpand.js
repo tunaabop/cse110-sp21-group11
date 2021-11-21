@@ -1,4 +1,3 @@
-
 class expandCard {
     static routes = {};
     registerCard = (page, func) => {

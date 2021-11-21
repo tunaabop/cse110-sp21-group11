@@ -1,4 +1,4 @@
-
+import { fetchParams, fetchById } from "./service/api.js";
 const recipes = []; // instead of using json files, we want recipes from the API
 const recipeData = {};  // used to access the recipe data from Spoonacular
 
@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', init);
 async function init() {
 
   console.log("initiating");
-  
     /*
     try {
       await fetchRecipes();
@@ -23,7 +22,13 @@ async function init() {
       return;
     }
     */
-
+   let params = 'query=pasta&maxFat=25&nuber=2';
+   await fetchParams(params).then(function(res){
+    const fetchedRecipes = res.results;
+    for (let i = 0; i < fetchedRecipes.length; i++) {
+      recipeData[fetchedRecipes[i].title] = fetchedRecipes[i].id;
+    }
+   })
 
     //createRecipeCards();
     //bindShowMore();
@@ -113,9 +118,9 @@ async function fetchRecipes() {
     });
 }
 
+
 //Create carousel, add to page
 async function addCarouselsToPage(searchQuery, numRecipes){
-  
 
   // Makes a new empty carousel
   const newCarousel = document.createElement('card-carousel');
@@ -128,6 +133,7 @@ async function addCarouselsToPage(searchQuery, numRecipes){
   await getRecipeList(searchQuery, numRecipes).then((value) => {
 
     recipeList = value;
+
 
   });
 
