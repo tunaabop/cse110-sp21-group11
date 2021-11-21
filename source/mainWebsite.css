@@ -80,6 +80,10 @@ li a:hover {
   background-attachment: fixed;
 }
 
+.card-carousel {
+  display: inline-block; 
+}
+
 .hero h1 {
   font-size: 4.5em;
   margin-bottom: 0.7em;
