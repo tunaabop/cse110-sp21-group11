@@ -5,7 +5,7 @@ class Card extends HTMLElement{
     }
 
     set data(cardData){
-        console.log("Setting card data");
+
         if(!cardData) return; //Exit function if data DNE
 
 
@@ -106,9 +106,13 @@ class Card extends HTMLElement{
           
           `;
 
-      
+        
+
         //Recipe Title
-        const titleText = "Temp Title Text"; //TEMP VAL; get title from API
+        //const titleText = "Temp Title Text"; //TEMP VAL; get title from API
+        const titleText = cardData.title;
+        console.log("Recipe title: " + titleText);
+
         const title = document.createElement('p');
         title.classList.add('title');
 
@@ -121,7 +125,10 @@ class Card extends HTMLElement{
         title.appendChild(link);
 
         //Recipe Thumbnail
-        const thumbnailLink = "images/dumpling.jpg";
+        //const thumbnailLink = "images/dumpling.jpg";
+        const thumbnailLink = cardData.image;
+        console.log("Recipe image url: " + thumbnailLink);
+
         const thumbnailImg = document.createElement('img');
         thumbnailImg.setAttribute('src', thumbnailLink);
         thumbnailImg.setAttribute('alt', titleText);
@@ -153,15 +160,24 @@ class Card extends HTMLElement{
 
 
         //Recipe cook time
-        const cookTime = ""; //TEMP VAL; get from API
+        const cookTime = cardData.readyInMinutes; //TEMP VAL; get from API
+        console.log("Recipe cook time: " + cookTime);
+
         const time = document.createElement('time');
-        time.innerText = ""; //TEMP VAL;convert time from API into readable string
+        time.innerText = cookTime + " Minutes"; //TEMP VAL;convert time from API into readable string
 
         //Recipe ingredients
-        const ingredientsList = "- 12,000 whole cloves of garlic\n- 42 cups of diced onions\n(...)"; //TEMP VAL; Get list of ingredients, store here as plaintext
+        var ingredientsList = ""; //TEMP VAL; Get list of ingredients, store here as plaintext
+        for(let i = 0; i < cardData.extendedIngredients.length; i++){
+          ingredientsList += cardData.extendedIngredients[i].originalString;
+          if(i != cardData.extendedIngredients.length-1) ingredientsList += ", ";
+        }
+
+        console.log("Recipe ingredients: " + ingredientsList);
+
         const ingredients = document.createElement('p');
         ingredients.classList.add('ingredients');
-        ingredients.innerText = ingredientsList;
+        ingredients.innerText = ingredientsList.substring(0, 100) + " (...)"; //Abbreviates ingredients text on card
 
         //TODO: Add recipe tag to card
 
