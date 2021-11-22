@@ -1,0 +1,12 @@
+name: He11's Kitchen's Approval Workflow
+on: pull_request_review
+jobs:
+  labelWhenApproved:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Label when approved
+      uses: pullreminders/label-when-approved-action@master
+      env:
+        APPROVALS: "2" 
+        GITHUB_TOKEN: ${{secrets.GITHUB+TOKEN }}
+        ADD_LABEL: "approved"

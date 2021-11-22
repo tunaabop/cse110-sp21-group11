@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Didot;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  /** text-align: center;**/
+  width: 30rem;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  display: inline-block;
+}
+
+ul li ul {
+  background: #3b3838;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 0.5rem;
+  position: absolute;
+  display: none;
+  width: 12rem;
+}
+
+ul li ul li {
+  width: 100%;
+  padding-left: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #615f5f;
+}
+
+.hero {
+  /*size the hero section */
+  width: 100vw;
+  height: 70vh;
+
+  /* flex */
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-image: url(images/pexels-ray-piedra-1565982.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.card-carousel {
+  display: inline-block; 
+}
+
+.hero h1 {
+  font-size: 4.5em;
+  margin-bottom: 0.7em;
+  color: white;
+  margin-left: 2em;
+}
+
+.hero h2 {
+  font-size: 1.8em;
+  color: #f5ebc9;
+  margin-left: 5em;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: #3b3838;
+}
+
+.top-bar input {
+  padding: 10px;
+  height: 10px;
+  margin-top: 25px;
+  border: none;
+}
+.top-bar button {
+  padding: 10px;
+  margin: 20px;
+}
+
+#search-btn img {
+  display: block;
+  height: 18px;
+  width: 18px;
+}
+
+.top-bar img {
+  height: 40px;
+  width: 120px;
+}
+
+
