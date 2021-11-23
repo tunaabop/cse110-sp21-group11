@@ -1,7 +1,7 @@
 class Card extends HTMLElement{
     constructor(){
         super(); //Inherit from ancestor
-        this.attachShadow({ mode: 'open'});
+        this.attachShadow({ mode: "open"});
     }
 
     set data(cardData){
@@ -11,8 +11,8 @@ class Card extends HTMLElement{
 
         this.json = cardData;
 
-        const cardStyle = document.createElement('style');
-        const cardArticle = document.createElement('article');
+        const cardStyle = document.createElement("style");
+        const cardArticle = document.createElement("article");
 
 
         //For now this is literally just card.css in its entirety
@@ -113,14 +113,14 @@ class Card extends HTMLElement{
         const titleText = cardData.title;
         console.log("Recipe title: " + titleText);
 
-        const title = document.createElement('p');
-        title.classList.add('title');
+        const title = document.createElement("p");
+        title.classList.add("title");
 
 
         //Recipe Link
         const hyperLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; //TEMP VAL; Temporary url to recipe
-        const link = document.createElement('a');
-        link.setAttribute('href', hyperLink);
+        const link = document.createElement("a");
+        link.setAttribute("href", hyperLink);
         link.innerText = titleText;
         title.appendChild(link);
 
@@ -129,15 +129,15 @@ class Card extends HTMLElement{
         const thumbnailLink = cardData.image;
         console.log("Recipe image url: " + thumbnailLink);
 
-        const thumbnailImg = document.createElement('img');
-        thumbnailImg.setAttribute('src', thumbnailLink);
-        thumbnailImg.setAttribute('alt', titleText);
+        const thumbnailImg = document.createElement("img");
+        thumbnailImg.setAttribute("src", thumbnailLink);
+        thumbnailImg.setAttribute("alt", titleText);
 
         //Recipe reviews
         const ratingValue = 4.5; //TEMP VAL; reviews to be added later
         const numRatings = 327; //^^
-        const rating = document.createElement('div');
-        rating.classList.add('rating');
+        const rating = document.createElement("div");
+        rating.classList.add("rating");
 
         //TEMP VAL; number of stars to display
         rating.innerHTML = `
@@ -146,13 +146,13 @@ class Card extends HTMLElement{
         `;
 
         if (numRatings != 0) {
-          rating.innerHTML += `<span>(${numRatings})</span>`;
+            rating.innerHTML += `<span>(${numRatings})</span>`;
         }
         //Maybe do 
-        else {
-        rating.innerHTML = `
-          <span>No Reviews</span>
-        `;
+        else {  
+            rating.innerHTML = `
+              <span>No Reviews</span>
+            `;
         }
 
 
@@ -163,20 +163,20 @@ class Card extends HTMLElement{
         const cookTime = cardData.readyInMinutes; //TEMP VAL; get from API
         console.log("Recipe cook time: " + cookTime);
 
-        const time = document.createElement('time');
+        const time = document.createElement("time");
         time.innerText = cookTime + " Minutes"; //TEMP VAL;convert time from API into readable string
 
         //Recipe ingredients
         var ingredientsList = ""; //TEMP VAL; Get list of ingredients, store here as plaintext
         for(let i = 0; i < cardData.extendedIngredients.length; i++){
-          ingredientsList += cardData.extendedIngredients[i].originalString;
-          if(i != cardData.extendedIngredients.length-1) ingredientsList += ", ";
+            ingredientsList += cardData.extendedIngredients[i].originalString;
+            if(i != cardData.extendedIngredients.length-1) ingredientsList += ", ";
         }
 
         console.log("Recipe ingredients: " + ingredientsList);
 
-        const ingredients = document.createElement('p');
-        ingredients.classList.add('ingredients');
+        const ingredients = document.createElement("p");
+        ingredients.classList.add("ingredients");
         ingredients.innerText = ingredientsList.substring(0, 100) + " (...)"; //Abbreviates ingredients text on card
 
         //TODO: Add recipe tag to card
@@ -202,4 +202,4 @@ class Card extends HTMLElement{
 
 
 
-customElements.define('recipe-card', Card);
+customElements.define("recipe-card", Card);

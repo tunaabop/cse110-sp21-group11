@@ -11,9 +11,10 @@
     "extends": "eslint:recommended" 
     ,
     "rules": {
+        "parser": "@babel/eslint-parser",
         "indent": [
             "error",
-            2
+            4
         ],
         "linebreak-style": [
             "error",

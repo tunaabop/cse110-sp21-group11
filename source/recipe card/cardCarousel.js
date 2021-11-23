@@ -3,14 +3,14 @@
 class CardCarousel extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: 'open' });
+        this.attachShadow({ mode: "open" });
     }
 
     // paramter is in an array of recipe cards
     createCardCarousel(recipeCards) {
         for (let i = 0; i < recipeCards.length; i++) {
             if (i > 2) {
-                recipeCards[i].classList.add('hidden');
+                recipeCards[i].classList.add("hidden");
             }
             this.shadowRoot.append(recipeCards[i]);
         }
@@ -21,11 +21,11 @@ class CardCarousel extends HTMLElement {
     * The next 3 recipe cards will be shown.
     */
     nextCards() {
-        const cards = this.querySelectorAll('recipe-card');
+        const cards = this.querySelectorAll("recipe-card");
         for (let i = cards.length - 4; i >= 0; i--) {
-            if (!(cards[i].classList.contains('hidden'))) {
-                cards[i].classList.add('hidden');
-                cards[i + 3].classList.remove('hidden');
+            if (!(cards[i].classList.contains("hidden"))) {
+                cards[i].classList.add("hidden");
+                cards[i + 3].classList.remove("hidden");
             }
         }
     }
@@ -35,14 +35,14 @@ class CardCarousel extends HTMLElement {
     * The previous 3 recipe cards will be shown.
     */
     prevCards() {
-        const cards = this.querySelectorAll('recipe-card');
+        const cards = this.querySelectorAll("recipe-card");
         for (let i = 3; i < cards.length; i++) {
-            if (!(cards[i].classList.contains('hidden'))) {
-                cards[i].classList.add('hidden');
-                cards[i - 3].classList.remove('hidden');
+            if (!(cards[i].classList.contains("hidden"))) {
+                cards[i].classList.add("hidden");
+                cards[i - 3].classList.remove("hidden");
             }
         }
     }
 }
 
-customElements.define('card-carousel', CardCarousel);
+customElements.define("card-carousel", CardCarousel);
