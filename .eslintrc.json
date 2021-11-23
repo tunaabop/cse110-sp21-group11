@@ -8,12 +8,15 @@
     "parserOptions": {
         "sourceType": "module",
         "allowImportExportEverywhere": true,
-        "ecmaVersion": 11,
-        "requireConfigFile":false
+        "ecmaVersion": 10,
+        "requireConfigFile":false,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
     },
     //"parser": "babel-eslint",
     "extends": "eslint:recommended" ,
-    //"parser": "@babel/eslint-parser",
+    "parser": "@babel/eslint-parser",
     "rules": {
         "indent": [
             "error",
