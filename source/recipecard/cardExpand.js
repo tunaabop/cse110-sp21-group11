@@ -1,3 +1,4 @@
+/* eslint-disable */
 class expandCard {
   static routes = {};
   registerCard = (page, func) => {
