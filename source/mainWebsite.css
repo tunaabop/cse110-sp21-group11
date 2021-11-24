@@ -183,7 +183,7 @@ li a:hover {
 }
 
 .recipes-wrapper {
-  margin-bottom: 5rem;
+  margin: 1.3rem;
 }
 
 .section-recipes-display h2 {
@@ -232,7 +232,8 @@ li a:hover {
 }
 
 /* the back and forward buttons */
-.back, .forward {
+.back,
+.forward {
   cursor: pointer;
   position: absolute;
   top: 48%;
@@ -244,7 +245,7 @@ li a:hover {
   color: black;
   font-size: 20px;
   overflow: hidden;
-  transition: all .35s;
+  transition: all 0.35s;
 }
 
 .back {
@@ -257,12 +258,15 @@ li a:hover {
 }
 
 /* button transition features */
-.back:hover, .forward:hover {
+.back:hover,
+.forward:hover {
   color: #df342f;
 }
 
-.back:before, .back:after,
-.forward:before, .forward:after {  
+.back:before,
+.back:after,
+.forward:before,
+.forward:after {
   position: absolute;
   content: "";
   width: 100%;
@@ -271,19 +275,23 @@ li a:hover {
   left: 0;
   background: lightgrey;
   z-index: -1;
-  transition: all .35s;
+  transition: all 0.35s;
 }
 
-.back:before, .forward:before {
-  opacity: .5;
+.back:before,
+.forward:before {
+  opacity: 0.5;
 }
 
-.back:after, .forward:after {
-  transition-delay: .25s;
+.back:after,
+.forward:after {
+  transition-delay: 0.25s;
 }
 
-.back:hover:before, .back:hover:after,
-.forward:hover:before, .forward:hover:after {
+.back:hover:before,
+.back:hover:after,
+.forward:hover:before,
+.forward:hover:after {
   top: 0;
 }
 
