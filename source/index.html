@@ -110,6 +110,64 @@
                 </div>
             </a>
         </section>
+
+        <section id="addWrapper">
+            <button type="button" id="addRecipeBtn"> Upload a Recipe </button>
+        </section>
+
+        <dialog id="addRecipeDialog" open>
+            <h2> Enter Recipe Details </h2>
+            <label> Name </label>
+            <input type="text" id="name">
+            <br>
+            <label> Recipe Title </label>
+            <input type="text" id="recipeTitle" class="title">
+            <br>
+            <label>Ingredients </label> 
+            <input type="text" id="ingredients" class="ingredients">
+            <br> 
+            <label>Time </label> 
+            <input type="text" id="time" class="time">
+            <br> 
+            <label>Tags </label> 
+            <input type="text" id="tag" class="recipeTag">
+            <br> 
+            <label> Recipe Instructions and Info </label> 
+            <input type="text" id="instructions">
+            <br> 
+
+            <menu>
+                <button type="button" id="add"> Add Recipe </button>
+                <button type="button" id="cancel"> No thanks, cancel </button>
+            </menu>
+        </dialog>
+
+        <dialog id="editRecipeDialog">
+            <h2> Edit your recipe </h2>
+            <label> Name </label> 
+            <input type="text" id="editName">
+            <br> 
+            <label> Recipe Title </label> 
+            <input type="text" id="editTitle">
+            <br> 
+            <label> Ingredients </label> 
+            <input type="text" id="editIngredients">
+            <br> 
+            <label> Time </label> 
+            <input type="text" id="editTime">
+            <br> 
+            <label> Tags </label> 
+            <input type="text" id="editTags">
+            <br> 
+            <label> Recipe Instructions and Info </label> 
+            <input type="text" id="editInstructions">
+            <br> 
+
+            <menu>
+                <button type="button" id="edit"> Edit Recipe </button>
+                <button type="button" id="cancelEdit"> Nevermind, cancel edit </button>
+            </menu>
+        </dialog>
                 
         <!-- recipes that show up on main page when loaded, shadow dom -->
         <section class="section-recipes-display">
@@ -128,8 +186,7 @@
                     <img src="images/mac.jpg" class="card-image">
                     <p class="title"> BEST Homemade Mac and Cheese </p>
                     <p class="recipeTag"> Comfort Food </p>
-                    <div class="rating-time"> 4.9
-                        <img src="images/5-stars-red.jpeg" class="rating">
+                    <div class="time"> 4.9
                         <img src="images/time-logo.png" class="time">
                         <p> 60 min </p>
                     </div>
