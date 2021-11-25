@@ -13,7 +13,7 @@
 .recipes-wrapper > card-carousel {
   display: grid;
   grid-template-columns: repeat(3, minmax(12rem, 16rem));
-  grid-gap: 4.3rem;
+  grid-gap: 8rem;
   justify-content: center;
 }
 
@@ -29,8 +29,7 @@ article {
   border-radius: 15px;
   border: 2px;
   padding: 15px;
-  margin: 2rem;
-  width: 250px;
+  width: 300px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
