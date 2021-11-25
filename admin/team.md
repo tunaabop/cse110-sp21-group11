@@ -25,6 +25,11 @@ Instead of our tools consisting of various cooking equipment, we will instead be
 
 I am a fourth year undergraduate student at UCSD majoring in applied mathematics and computer science. My professional and academic interests include software engineering and web development. I went to a charter fine arts school in high school called the Orange County School of the Arts where I was accepted into the visual arts conservatory, so my biggest hobby is art. I love to experiment with all types of mediums including digital media, watercolor, oil painting, and plein-air painting to name a few, but my absolute favorite is oil painting since it is the most forgiving! Otherwise, I love baking, reading, trying out different workouts, and cats. 
 
+### **Vivian Dang** ###
+[Github page](https://github.com/vtdangg)
+
+I'm a 3rd year undergraduate student majoring in Math-CS at Revelle College. I am interested in software engineering and programming. Some of my hobbies and interests outside of school include working out and running, trying out new recipes to cook, reading, and watching sunsets. I also love sight seeing and exploring new places. 
+
 ### **Zedian Zhang** ###
 
 [Github page](https://github.com/zedianzhang)
@@ -65,3 +70,10 @@ I am a fourth year undergraduate student majoring in Math-Computer Science. My m
 [Github page](https://github.com/xiw019)
 
 I am a fourth year undegraduate student at UCSD ERC. My major is Cognitive Science, specialized in Machine Learning and Neural computation and I also minor in Computer Science. My interest of study is neural networks and models of recommender systems. In terms of hobby, I like cycling and archery. I am a member of UCSD cycling team. I also like PC Diying, I built a lot PCs for fun or for my friends. 
+
+### **Moises Ruiz** ###
+
+[Github page](https://github.com/Moru4)
+
+I am a third year undergraduate student at UCSD majoring in Math-Computer Science. My academic interest is software engineering. I'm from Los Angeles and I'm a huge soccer fan. I played soccer throughout highschool, and although I have not played in a while, I plan on starting to play again. However, I still enjoy watching soccer games, especially on the weekends. I also enjoy watching tv shows, playing video games, and playing other sports like basketball.
+
