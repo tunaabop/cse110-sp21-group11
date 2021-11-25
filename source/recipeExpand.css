@@ -1,0 +1,99 @@
+body, main {
+    padding: 1mm;
+    padding-top: 0.5mm;
+  }
+  /* the entire page (put a grid around it)  */
+.wrapper-exp {
+    display: grid;
+    /* border-radius: 25px; */
+}
+/* set padding and background color for each section in page */
+.wrapper-exp > section{
+    background-color: #eee;
+    padding: 1em;
+    /* border-radius: 25px; */
+}
+
+/* the image/description section */
+.recipe-desc-exp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    /* border-radius: 25px; */
+}
+/* the content inside the image/description section */
+.recipe-desc-exp > div{
+    background-color: #ddd;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+/* the add to fav subsection */
+.recipe-desc-exp > div:nth-child(3){
+    background-color: #eee;
+    height: 30px;
+}
+
+/* the description subsection */
+.descriptionBox{
+    padding: 1em;
+    font-size: 2.5vw;
+    border-radius: 25px;
+}
+
+/* the main recipe img subsection */
+#recipe-img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+
+/* the add to fav star img*/
+#star-img{
+    height: 25px;
+    width: 25px;
+}
+
+/* the rating star img */
+#starRate{
+    height: 25px;
+    width: 100px;
+}
+
+/* the box containing the ingredient content(the checkbox stuff)*/
+.ingredients-desc-exp > div:nth-child(2){
+    background-color: #ddd;
+    padding: 1px;
+    text-align: center;
+    font-size: 2.5vw;
+    border-radius: 25px;
+}
+
+/* when checkbox is clicked, strikethrough the text */
+.ingredientsBox:checked + span{
+    text-decoration: line-through;
+}
+
+/* the box containing the tutorial content*/
+.tutorial-desc-exp > div:nth-child(2){
+    background-color: #ddd;
+    padding: 1px;
+    font-size: 2.5vw;
+    border-radius: 25px;
+    padding-left: 1em;
+}
+
+/* the box containing the nutional content*/
+.nutrition-desc-exp > div:nth-child(2){
+    display: flex;
+    column-gap: 1em;
+    background-color: #ddd;
+    padding: 1px;
+    text-align:center;
+    font-size: 2.5vw;
+    left: 10em;
+    padding-left: 7.5em;
+    border-radius: 25px;
+}
