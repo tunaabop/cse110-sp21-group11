@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Didot;
+}
+
+body {
+  width: 100vw;
+}
+
+.breakfast-hero {
+  /*size the hero section */
+  width: 100vw;
+  height: 70vh;
+
+  /* flex */
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-image: url(images/pexels-photo-4109384.jpeg);
+  background-size: cover;
+  background-repeat: no repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.breakfast-hero-module {
+  margin: auto;
+  padding: 10px;
+}
+
+.breakfast-hero-module-wrapper {
+  justify-content: center;
+  margin: auto;
+  border: 3px #ffcb3d inset;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  opacity: 0.7;
+  height: 220px;
+  width: 450px;
+}
+
+.breakfast-hero-module-wrapper h1 {
+  opacity: 1;
+  font-size: 1.8em;
+  color: #402a26;
+  text-decoration: 3px underline #ffcb3d;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  padding: 1rem;
+}
+
+.breakfast-hero-module-wrapper p {
+  font-size: 1em;
+  color: #402a26;
+  margin: auto;
+  width: 300px;
+}
+
+.breakfast-hero-module-wrapper:hover {
+  opacity: 0.9;
+  transition: 0.4s;
+}
+
+.checkbox-breakfast {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-breakfast input {
+  margin: 10px;
+}

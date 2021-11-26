@@ -4,16 +4,20 @@
   font-family: Didot;
 }
 
-.hidden {
+
+.hide {
   display: none;
 }
 
+body {
+  width: 100vw;
+}
 
 
 nav {
   display: flex;
   justify-content: flex-start;
-  width: 100vw;
+  width: 50vw;
 }
 
 ul {
@@ -25,7 +29,7 @@ ul {
 }
 
 li {
-  padding: 10px;
+  padding: 0.55rem;
   display: inline-block;
 }
 
@@ -36,13 +40,17 @@ ul li ul {
   margin-top: 0.5rem;
   position: absolute;
   display: none;
-  width: 12rem;
+  width: 13rem;
+  cursor: pointer;
 }
 
 ul li ul li {
-  width: 100%;
-  padding-left: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 11.9rem;
+  /** box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; **/
+}
+
+ul li ul li:hover {
+  background-color: grey;
 }
 
 ul li:hover > ul,
@@ -50,6 +58,7 @@ ul li ul:hover {
   visibility: visible;
   opacity: 1;
   display: block;
+  text-decoration: 3px underline #f55442;
 }
 
 nav a {
@@ -58,10 +67,16 @@ nav a {
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 li a:hover {
-  background-color: #615f5f;
+  text-decoration: 3px underline #f55442;
+}
+
+#logo-img {
+  object-fit: cover;
+  height: 80px;
 }
 
 .hero {
@@ -80,50 +95,237 @@ li a:hover {
   background-attachment: fixed;
 }
 
+
 .card-carousel {
   display: inline-block; 
 }
 
-.hero h1 {
+/*.hero h1 {
   font-size: 4.5em;
   margin-bottom: 0.7em;
   color: white;
-  margin-left: 2em;
-}
-
-.hero h2 {
-  font-size: 1.8em;
-  color: #f5ebc9;
-  margin-left: 5em;
-}
+  margin-left: 2em;*/
 
 .top-bar {
   display: flex;
   justify-content: space-around;
+  width: 100%;
   overflow: hidden;
   background-color: #3b3838;
+
 }
 
-.top-bar input {
-  padding: 10px;
-  height: 10px;
-  margin-top: 25px;
-  border: none;
-}
-.top-bar button {
-  padding: 10px;
-  margin: 20px;
+.top-bar li i {
+  color: #f5ebc9;
 }
 
-#search-btn img {
-  display: block;
-  height: 18px;
-  width: 18px;
+.top-bar p {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: 8px;
+  width: 280px;
+  padding: 1rem;
 }
 
-.top-bar img {
+.search-box {
+  display: flex;
+  margin-top: 15px;
+  max-width: 200px;
   height: 40px;
-  width: 120px;
+}
+
+.hero-search input {
+  padding: 15px;
+  width: 100%;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.search-box input {
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: white;
+  opacity: 0.7;
+}
+
+#icon {
+  object-fit: cover;
+  padding: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  background-color: #f5ebc9;
+  opacity: 0.9;
+}
+
+#hero-icon {
+  background: #3b3838;
+  color: white;
+  width: 43px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#hero-icon:hover {
+  transform: scale(1.07);
+  transition: all 0.3s ease-out;
+}
+
+#icon i,
+#hero-icon i {
+  padding: 6.5px;
+  transition: 0.3s;
+}
+
+.hero-search {
+  margin: auto;
+  display: flex;
+  max-width: 350px;
+  height: 40px;
+  background: white;
+  opacity: 0.45;
+  border-radius: 10px;
+}
+
+.recipes-wrapper {
+  margin-bottom: 5rem;
+}
+
+.section-recipes-display h2 {
+  display: flex;
+  max-width: 550px;
+  font-size: 1.8em;
+  color: #402a26;
+  text-decoration: 3px underline #ffcb3d;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  padding: 1rem;
+}
+
+.section-recipes-display h2:hover {
+  color: #2e4d15;
+  text-decoration: 3px underline #f55442;
+  cursor: pointer;
+}
+
+.section-recipes-display h2 i {
+  float: right;
+  cursor: pointer;
+  margin: 5px;
+  height: 45px;
+  width: 45px;
+  text-decoration: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* the top recipe caraosuel */
+.recipes-wrapper {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* the back and forward buttons */
+.back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  height: 20px;
+  margin-top: -23px;
+  padding: 17px;
+  border-radius: 50px;
+  color: black;
+  font-size: 20px;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.back {
+  left: -15mm;
+}
+
+/* place forward button to right of page */
+.forward {
+  right: -37mm;
+}
+
+/* button transition features */
+.back:hover, .forward:hover {
+  color: #df342f;
+}
+
+.back:before, .back:after,
+.forward:before, .forward:after {  
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: lightgrey;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.back:before, .forward:before {
+  opacity: .5;
+}
+
+.back:after, .forward:after {
+  transition-delay: .25s;
+}
+
+.back:hover:before, .back:hover:after,
+.forward:hover:before, .forward:hover:after {
+  top: 0;
+}
+
+footer {
+  display: flex;
+  background-color: #3b3838;
+  width: 100%;
+  height: 250px;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+#github {
+  display: flex;
+  align-items: center;
+}
+
+#github i {
+  cursor: pointer;
+  color: #ffcb3d;
+  font-size: 4em;
+}
+
+#github p {
+  color: #f5ebc9;
+  padding: 0.7rem;
+  font-size: 20px;
 }
 
 
