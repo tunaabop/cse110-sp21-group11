@@ -1,8 +1,8 @@
 .featured {
-  border: 1px solid #ccc;
   padding: 20px 20px 20px 20px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  outline: none;
+  border: none;
 }
 
 .featured a {
@@ -29,7 +29,6 @@
   max-width: 600px;
   overflow: hidden;
   background-color: rgb(240, 240, 240);
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .featured-text {

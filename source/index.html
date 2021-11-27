@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> He11's Kitchen </title>
-    <script src="/main.js" type="module"></script>
     <link rel="stylesheet" href="mainWebsite.css">
-    <link rel="stylesheet" href="card.css">
+    <!-- <link rel="stylesheet" href="card.css"> -->
     <link rel="stylesheet" href="featured.css">
+    <link rel="stylesheet" href="card.css">
     <script src="https://use.fontawesome.com/71ef81c39b.js"></script>
-    <script src="recipecard/card.js" type="module"></script>
+    <!-- <script src="recipecard/card.js" type="module"></script> -->
     <script src="recipecard/cardCarousel.js" type="module"></script>
     <script src="recipecard/cardExpand.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+    <script src="crud.js" type="module"></script>
 </head>
 
 <body class="hideScroll">
@@ -52,6 +54,9 @@
                 <!-- end nav bar -->
                 </ul>
             </nav>
+            <div id="addWrapper">
+                <button type="button" id="addRecipeBtn" > Upload a Recipe </button>
+            </div>
             <!-- He11's Kitchen title on nav bar -->
                 <p> He<span style="color: red">11</span>'s <span style="color: #f1dcb4">Kitchen </span></p>
                 <div class="search-box">
@@ -75,7 +80,6 @@
             </section>
 
       </header>
-        
         <!--- featured recipe -->
 
         <section class="featured">
@@ -96,122 +100,15 @@
                 </div>
             </a>
         </section>
-
-        <section id="addWrapper">
-            <button type="button" id="addRecipeBtn"> Upload a Recipe </button>
-        </section>
-
-        <dialog id="addRecipeDialog" open>
-            <h2> Enter Recipe Details </h2>
-            <label> Name </label>
-            <input type="text" id="name">
-            <br>
-            <label> Recipe Title </label>
-            <input type="text" id="recipeTitle" class="title">
-            <br>
-            <label>Ingredients </label> 
-            <input type="text" id="ingredients" class="ingredients">
-            <br> 
-            <label>Time </label> 
-            <input type="text" id="time" class="time">
-            <br> 
-            <label>Tags </label> 
-            <input type="text" id="tag" class="recipeTag">
-            <br> 
-            <label> Recipe Instructions and Info </label> 
-            <input type="text" id="instructions">
-            <br> 
-
-            <menu>
-                <button type="button" id="add"> Add Recipe </button>
-                <button type="button" id="cancel"> No thanks, cancel </button>
-            </menu>
-        </dialog>
-
-        <dialog id="editRecipeDialog">
-            <h2> Edit your recipe </h2>
-            <label> Name </label> 
-            <input type="text" id="editName">
-            <br> 
-            <label> Recipe Title </label> 
-            <input type="text" id="editTitle">
-            <br> 
-            <label> Ingredients </label> 
-            <input type="text" id="editIngredients">
-            <br> 
-            <label> Time </label> 
-            <input type="text" id="editTime">
-            <br> 
-            <label> Tags </label> 
-            <input type="text" id="editTags">
-            <br> 
-            <label> Recipe Instructions and Info </label> 
-            <input type="text" id="editInstructions">
-            <br> 
-
-            <menu>
-                <button type="button" id="edit"> Edit Recipe </button>
-                <button type="button" id="cancelEdit"> Nevermind, cancel edit </button>
-            </menu>
-        </dialog>
-                
+        
         <!-- recipes that show up on main page when loaded, shadow dom -->
         <section class="section-recipes-display">
 
-            <h2> Easy Recipes under 60 Minutes
-                <i class="fa fa-long-arrow-right"></i>
-            </h2>
-            <!-- this div class of recipes-wrapper will be the carousel element-->
-
-            <!-- recipe carousel #1-->
-
-            <div class="recipes-wrapper">
-                <!-- <recipe-carousel> -->
-
-                <article>
-                    <img src="images/mac.jpg" class="card-image">
-                    <p class="title"> BEST Homemade Mac and Cheese </p>
-                    <p class="recipeTag"> Comfort Food </p>
-                    <div class="time"> 4.9
-                        <img src="images/time-logo.png" class="time">
-                        <p> 60 min </p>
-                    </div>
-                </article>
-
-                <article>
-                    <img class="card-image" src="images/risotto.jpg">
-                    <p class="title"> Miso Sweet Potato Risotto </p>
-                    <p class="recipeTag"> Quick Dinners </p>
-                    <div class="rating-time"> 4.6
-                        <img src="images/5-stars-red.jpeg" class="rating">
-                        <img src="images/time-logo.png" class="time">
-                        <p> 45 min</p>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="images/dumpling.jpg" class="card-image">
-                    <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                    <p class="recipeTag"> Comfort Food </p>
-                    <div class="rating-time"> 4.8
-                        <img src="images/5-stars-red.jpeg" class="rating">
-                        <img src="images/time-logo.png" class="time">
-                        <p> 50 min </p>
-                    </div>
-                </article>
-                <!-- </recipe-carousel> -->
-                <a class="back">&#10094</a>
-                <a class="forward">&#10095</a>
-            </div>
-
-            <h2> One-Pot Meals For Less Dishes
+            <h2> Easy Pasta Recipes
                 <i class="fa fa-long-arrow-right"></i>
             </h2>
 
-            <!-- recipe carousel #2-->
-
             <div class="recipes-wrapper">
-                <!-- <recipe-carousel> -->
                 <article>
                     <img src="images/mac.jpg" class="card-image">
                     <p class="title"> BEST Homemade Mac and Cheese </p>
@@ -221,6 +118,7 @@
                         <img src="images/time-logo.png" class="time">
                         <p> 60 min </p>
                     </div>
+                    <p class="ingredients"> macaroni, gruyere, cheddar, butter, cream cheese, spices </p>
                 </article>
 
                 <article>
@@ -235,68 +133,28 @@
                 </article>
 
                 <article>
-                    <img src="images/dumpling.jpg" class="card-image">
-                    <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                    <p class="recipeTag"> Comfort Food </p>
-                    <div class="rating-time"> 4.8
+                    <img class="card-image" src="images/risotto.jpg">
+                    <p class="title"> Miso Sweet Potato Risotto </p>
+                    <p class="recipeTag"> Quick Dinners </p>
+                    <div class="rating-time"> 4.6
                         <img src="images/5-stars-red.jpeg" class="rating">
                         <img src="images/time-logo.png" class="time">
-                        <p> 50 min </p>
+                        <p> 45 min</p>
                     </div>
                 </article>
 
-                <!-- </recipe-carousel> -->
                 <a class="back">&#10094</a>
                 <a class="forward">&#10095</a>
             </div>
 
-            <!-- recipe carousel #3-->
-
-            <h2> Dishes For Thanksgiving Dinner
-                <i class="fa fa-long-arrow-right"></i>
-            </h2>
+                <h2> Best Tasty Burger Dishes
+                    <i class="fa fa-long-arrow-right"></i>
+                </h2>
 
             <div class="recipes-wrapper">
-                <!-- <recipe-carousel> -->
-
-                <article>
-                    <img src="images/mac.jpg" class="card-image">
-                    <p class="title"> BEST Homemade Mac and Cheese </p>
-                    <p class="recipeTag"> Comfort Food </p>
-                    <div class="rating-time"> 4.9
-                        <img src="images/5-stars-red.jpeg" class="rating">
-                        <img src="images/time-logo.png" class="time">
-                        <p> 60 min </p>
-                    </div>
-                </article>
-
-                <article>
-                    <img class="card-image" src="images/risotto.jpg">
-                    <p class="title"> Miso Sweet Potato Risotto </p>
-                    <p class="recipeTag"> Quick Dinners </p>
-                    <div class="rating-time"> 4.6
-                        <img src="images/5-stars-red.jpeg" class="rating">
-                        <img src="images/time-logo.png" class="time">
-                        <p> 45 min</p>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="images/dumpling.jpg" class="card-image">
-                    <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                    <p class="recipeTag"> Comfort Food </p>
-                    <div class="rating-time"> 4.8
-                        <img src="images/5-stars-red.jpeg" class="rating">
-                        <img src="images/time-logo.png" class="time">
-                        <p> 50 min </p>
-                    </div>
-                </article>
-
-                <!-- </recipe-carousel> -->
                 <a class="back">&#10094</a>
                 <a class="forward">&#10095</a>
             </div>
-
         </section>
     <!--
     //use js files to populate these here:
@@ -367,7 +225,7 @@
         <section class="howTo-sanitation-expand-page hide">
             <sanitation-expand-page> </sanitation-expand-page>
         </section>
-
+    -->
     </main>
 
     <footer>
