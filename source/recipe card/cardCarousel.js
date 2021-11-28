@@ -1,10 +1,10 @@
 // CardCarousel.js
-
 class CardCarousel extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
     }
+
 
     // paramter is in an array of recipe cards
     createCardCarousel(recipeCards) {
@@ -15,6 +15,16 @@ class CardCarousel extends HTMLElement {
             this.shadowRoot.append(recipeCards[i]);
         }
     }
+
+    //let nextButton = new CardCarousel(document.querySelector('.forward'));
+    //nextButton = document.querySelector('.forward'); // next 3 recipes
+    //prevButton = document.querySelector('.back'); // last 3 recipes in previous slides
+
+    // when nextButton is clicked, see next 3 recipes
+    //buttons[0].addEventListener('click', nextCards());
+
+    // when prevButton is clicked, see prev 3 recipes
+    //buttons[1].addEventListener('click', prevCards());
 
     /*
     * This function will be called in an event listener when the right button is clicked.
@@ -44,5 +54,13 @@ class CardCarousel extends HTMLElement {
         }
     }
 }
-
 customElements.define('card-carousel', CardCarousel);
+
+/*
+* Creating the buttons for next and previous slides of the carousel
+* And adding the event listeners for each button
+*/
+const nextButton = document.querySelector('.forward'); // next 3 recipes
+const prevButton = document.querySelector('.back'); // last 3 recipes in previous slides
+nextButton.addEventListener('click', CardCarousel().nextCards());
+prevButton.addEventListener('click', CardCarousel().prevCards());

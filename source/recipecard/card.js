@@ -87,7 +87,7 @@ class Card extends HTMLElement{
             align-items: center;
           }
           
-          div.rating-time img.rating {
+          div.rating-time > img {
             display: inline-block;
             object-fit: scale-down;
             width: 100px;
@@ -120,7 +120,7 @@ class Card extends HTMLElement{
         //Recipe Link
         const hyperLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; //TEMP VAL; Temporary url to recipe
         const link = document.createElement('a');
-        link.setAttribute('href', hyperLink);
+        //link.setAttribute('href', hyperLink);
         link.innerText = titleText;
         title.appendChild(link);
 
@@ -130,23 +130,35 @@ class Card extends HTMLElement{
         console.log("Recipe image url: " + thumbnailLink);
 
         const thumbnailImg = document.createElement('img');
+        thumbnailImg.classList.add('card-image');
         thumbnailImg.setAttribute('src', thumbnailLink);
         thumbnailImg.setAttribute('alt', titleText);
+
+
+        //Recipe cook time
+        let cookTime = cardData.readyInMinutes; //TEMP VAL; get from API
+        console.log("Recipe cook time: " + cookTime);
+
+        //const time = document.createElement('time');
+        cookTime = cookTime + " Minutes"; //TEMP VAL;convert time from API into readable string
+
 
         //Recipe reviews
         const ratingValue = 4.5; //TEMP VAL; reviews to be added later
         const numRatings = 327; //^^
         const rating = document.createElement('div');
-        rating.classList.add('rating');
+        rating.classList.add('rating-time');
 
         //TEMP VAL; number of stars to display
         rating.innerHTML = `
         <span>${ratingValue}</span>
-        <img src="images\\5-stars-red.jpeg" alt="5 stars"></img>
+        <img src="images\\5-stars-red.jpeg" class = "rating"></img>
+        <img src="images\\time-logo.png" class = "time"></img>
+        <p>${cookTime}</p>
         `;
 
         if (numRatings != 0) {
-          rating.innerHTML += `<span>(${numRatings})</span>`;
+        //  rating.innerHTML += `<span>(${numRatings})</span>`;
         }
         //Maybe do 
         else {
@@ -159,12 +171,7 @@ class Card extends HTMLElement{
         //TODO: Change picture based on # of stars
 
 
-        //Recipe cook time
-        const cookTime = cardData.readyInMinutes; //TEMP VAL; get from API
-        console.log("Recipe cook time: " + cookTime);
-
-        const time = document.createElement('time');
-        time.innerText = cookTime + " Minutes"; //TEMP VAL;convert time from API into readable string
+        
 
         //Recipe ingredients
         var ingredientsList = ""; //TEMP VAL; Get list of ingredients, store here as plaintext
@@ -186,7 +193,7 @@ class Card extends HTMLElement{
         cardArticle.appendChild(thumbnailImg);
         cardArticle.appendChild(title);
         cardArticle.appendChild(rating);
-        cardArticle.appendChild(time);
+        //cardArticle.appendChild(time);
         cardArticle.appendChild(ingredients);
 
 
