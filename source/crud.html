@@ -71,6 +71,26 @@
             padding: 12px;
             color: #ebdea0;
           }
+
+          .crudButtons{
+            display: flex;
+            flex-direction: space-between;
+          }
+
+          #add, #cancel{
+            outline: none;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+          }
+
+          button:hover{
+            transform: scale(1.07);
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+          }
         </style>
     </head>
     <body>
@@ -101,11 +121,11 @@
                 <label> Recipe Instructions </label> 
                 <textarea id="instructions"> </textarea>
                 <br> 
-    
-                <menu>
-                    <button type="button" id="add"> Add Recipe </button>
-                    <button type="button" id="cancel"> No thanks, cancel </button>
-                </menu>
+
+                <section class="crudButtons"> 
+                <button type="button" id="add"> Add Recipe </button>
+                <button type="button" id="cancel"> Cancel Add</button>
+              </section>
             </form>
     
             <dialog id="editRecipeDialog">
@@ -130,14 +150,15 @@
                 <label> Recipe Instructions </label> 
                 <textarea id="instructions"> </textarea>
                 <br> 
-    
-                <menu>
-                    <button type="button" id="edit"> Edit Recipe </button>
-                    <button type="button" id="cancelEdit"> Nevermind, cancel edit </button>
-                </menu>
+
+                <section class="crudButtons">
+                <button type="button" id="edit"> Edit Recipe </button>
+                <button type="button" id="cancelEdit"> Cancel </button>
+              </section>
             </dialog>
             <footer>
 
             </footer>
         </main>
     </body>
+    </html>

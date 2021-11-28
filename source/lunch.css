@@ -63,14 +63,3 @@ body {
   opacity: 0.9;
   transition: 0.4s;
 }
-
-.checkbox-lunch {
-  display: flex;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.checkbox-lunch input {
-  margin: 10px;
-}

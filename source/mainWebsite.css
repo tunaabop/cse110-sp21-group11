@@ -195,8 +195,13 @@ li a:hover {
   max-width: 350px;
   height: 40px;
   background: white;
-  opacity: 0.45;
+  opacity: 0.6;
   border-radius: 10px;
+}
+
+.hero-search:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .recipes-wrapper {
