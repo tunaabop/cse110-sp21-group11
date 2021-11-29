@@ -32,12 +32,12 @@
     "version": "1.0.0",
     "main": "index.js",
     "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cse110-fa21-group11/cse110-sp21-group11.git"
+        "type": "git",
+        "url": "git+https://github.com/cse110-fa21-group11/cse110-sp21-group11.git"
     },
     "keywords": [],
     "bugs": {
-    "url": "https://github.com/cse110-fa21-group11/cse110-sp21-group11/issues"
+        "url": "https://github.com/cse110-fa21-group11/cse110-sp21-group11/issues"
     },
     "homepage": "https://github.com/cse110-fa21-group11/cse110-sp21-group11#readme"
 }
