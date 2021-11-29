@@ -1,25 +1,39 @@
 {
-    "devDependencies": {
-        "@babel/core": "^7.16.0",
-        "@babel/eslint-parser": "^7.16.3",
-        "@babel/preset-env": "^7.16.0",
-        "babel-eslint": "^10.1.0",
-        "babel-jest": "^27.3.1",
-        "cypress": "^9.1.0",
-        "eslint": "^8.3.0",
-        "jest": "^27.3.1",
-        "jest-puppeteer": "^6.0.0",
-        "puppeteer": "^11.0.0"
-    },
-    "scripts": {
-        "cypress:open": "cypress open",
-        "cypress:run": "cypress run",
-        "test": "jest",
-        "lint": "npx eslint ./"
-    },
-    "jest": {
-        "preset": "jest-puppeteer",
-        "verbose": true
-    },
-    "dependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-env": "^7.16.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.3.1",
+    "cypress": "^9.1.0",
+    "eslint": "^8.3.0",
+    "jest": "^27.3.1",
+    "jest-puppeteer": "^6.0.0",
+    "puppeteer": "^11.0.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "jest",
+    "lint": "npx eslint ./"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "verbose": true
+  },
+  "name": "cse110-sp21-group11",
+  "description": "[Team Page](https://github.com/cse110-fa21-group11/cse110-sp21-group11/blob/main/admin/team.md)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cse110-fa21-group11/cse110-sp21-group11.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cse110-fa21-group11/cse110-sp21-group11/issues"
+  },
+  "homepage": "https://github.com/cse110-fa21-group11/cse110-sp21-group11#readme"
 }
