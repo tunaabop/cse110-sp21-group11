@@ -17,7 +17,7 @@
     "scripts": {
         "cypress:open": "cypress open",
         "cypress:run": "cypress run",
-        "test": "jest",
+        "jtest": "npx jest ./__tests__",
         "lint": "npx eslint ./",
         "start": "npx webpack --config ./source/webpack.config.js --mode development --watch",
         "build": "npx webpack --config ./source/webpack.config.js --mode production"
@@ -26,18 +26,19 @@
         "preset": "jest-puppeteer",
         "verbose": true
     },
-    "dependencies": {},
+    "dependencies": {
+    },
     "name": "cse110-sp21-group11",
     "description": "[Team Page](https://github.com/cse110-fa21-group11/cse110-sp21-group11/blob/main/admin/team.md)",
     "version": "1.0.0",
     "main": "index.js",
     "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cse110-fa21-group11/cse110-sp21-group11.git"
+        "type": "git",
+        "url": "git+https://github.com/cse110-fa21-group11/cse110-sp21-group11.git"
     },
     "keywords": [],
     "bugs": {
-    "url": "https://github.com/cse110-fa21-group11/cse110-sp21-group11/issues"
+        "url": "https://github.com/cse110-fa21-group11/cse110-sp21-group11/issues"
     },
     "homepage": "https://github.com/cse110-fa21-group11/cse110-sp21-group11#readme"
 }
