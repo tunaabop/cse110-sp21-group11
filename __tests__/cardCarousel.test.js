@@ -1,6 +1,8 @@
 const functions = require("../source/recipecard/cardCarousel.js");
 
+// need to be filled out
 describe("tests for nextCards",() => {
+    
     test('test nexCards',()=>{
         expect(functions.nextCards()).toBe();
     })
@@ -14,6 +16,7 @@ describe("tests for nextCards",() => {
     })
 })
 
+// need to be filled out
 describe("tests for prevCards",() => {
     test('test prevCards',()=>{
         expect(functions.prevCards()).toBe();
