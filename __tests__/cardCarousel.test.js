@@ -31,4 +31,19 @@ describe("tests for prevCards",() => {
     })
 })
 
+describe("tests for createCardCarousel",() => {
+    test('test createCardCarousel',()=>{
+        expect(functions.createCardCarousel()).toBe();
+    })
+
+    test('test createCardCarousel',()=>{
+        expect(functions.createCardCarousel()).toBe();
+    })
+
+    test('test createCardCarousel',()=>{
+        expect(functions.createCardCarousel()).toBe();
+    })
+})
+
+ 
  
