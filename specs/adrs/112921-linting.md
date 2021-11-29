@@ -1,6 +1,6 @@
 # Decision- Use a ESlint as linting tool
 ## Context and Problem Statement:
-We want a tool to check our code style and code style for javascript.
+We want a tool that runs on static code to find formatting discrepancy, non-adherence to coding standards and conventions, and find logical errors in your program
 ## Considered Options  
 *  JSLint
 *  ESLint
