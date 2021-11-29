@@ -111,7 +111,7 @@ class Card extends HTMLElement{
         //Recipe Title
         //const titleText = "Temp Title Text"; //TEMP VAL; get title from API
         const titleText = cardData.title;
-        console.log("Recipe title: " + titleText);
+        
 
         const title = document.createElement('p');
         title.classList.add('title');
@@ -120,14 +120,12 @@ class Card extends HTMLElement{
         //Recipe Link
         const hyperLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; //TEMP VAL; Temporary url to recipe
         const link = document.createElement('a');
-        //link.setAttribute('href', hyperLink);
         link.innerText = titleText;
         title.appendChild(link);
 
         //Recipe Thumbnail
-        //const thumbnailLink = "images/dumpling.jpg";
+      
         const thumbnailLink = cardData.image;
-        console.log("Recipe image url: " + thumbnailLink);
 
         const thumbnailImg = document.createElement('img');
         thumbnailImg.classList.add('card-image');
@@ -137,7 +135,6 @@ class Card extends HTMLElement{
 
         //Recipe cook time
         let cookTime = cardData.readyInMinutes; //TEMP VAL; get from API
-        console.log("Recipe cook time: " + cookTime);
 
         //const time = document.createElement('time');
         cookTime = cookTime + " Minutes"; //TEMP VAL;convert time from API into readable string
@@ -179,8 +176,6 @@ class Card extends HTMLElement{
           ingredientsList += cardData.extendedIngredients[i].originalString;
           if(i != cardData.extendedIngredients.length-1) ingredientsList += ", ";
         }
-
-        console.log("Recipe ingredients: " + ingredientsList);
 
         const ingredients = document.createElement('p');
         ingredients.classList.add('ingredients');
