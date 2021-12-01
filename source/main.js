@@ -49,6 +49,20 @@ function bindSubPages() {
       //if these sections have the class "seen", then remove. if not dont do anything
       document.querySelector(".hero").classList.remove("seen");
       document.querySelector(".featured").classList.remove("seen");
+
+      //remove lunch sections if redirecting from lunch page
+      if (document.querySelector(".lunch-hero")){
+        document.querySelector(".lunch-hero").classList.remove("seen");
+      }
+      //remove dinner sections if redirecting from dinner page
+      if (document.querySelector(".dinner-hero")){
+        document.querySelector(".dinner-hero").classList.remove("seen");
+      }
+      //remove dessert section if redirecting from dessert page
+      if (document.querySelector(".dessert-hero")){
+        document.querySelector(".dessert-hero").classList.remove("seen");
+      }
+
       //add breakfast section
       document.querySelector(".breakfast-hero").classList.add("seen");
     });
@@ -59,7 +73,20 @@ function bindSubPages() {
     //if these sections have the class "seen", then remove. if not dont do anything
     document.querySelector(".hero").classList.remove("seen");
     document.querySelector(".featured").classList.remove("seen");
-    //add breakfast section
+
+    //remove breakfast sections if redirecting from lunch page
+    if (document.querySelector(".breakfast-hero")){
+      document.querySelector(".breakfast-hero").classList.remove("seen");
+    }
+    //remove dinner sections if redirecting from dinner page
+    if (document.querySelector(".dinner-hero")){
+      document.querySelector(".dinner-hero").classList.remove("seen");
+    }
+    //remove dessert section if redirecting from dessert page
+    if (document.querySelector(".dessert-hero")){
+      document.querySelector(".dessert-hero").classList.remove("seen");
+    }
+    //add lunch section
     document.querySelector(".lunch-hero").classList.add("seen");
   });
 
@@ -68,7 +95,19 @@ function bindSubPages() {
     //remove main website sections
     document.querySelector(".hero").classList.remove("seen");
     document.querySelector(".featured").classList.remove("seen");
-    //add breakfast section
+    //remove breakfast sections if redirecting from lunch page
+    if (document.querySelector(".breakfast-hero")){
+      document.querySelector(".breakfast-hero").classList.remove("seen");
+    }
+    //remove lunch sections if redirecting from dinner page
+    if (document.querySelector(".lunch-hero")){
+      document.querySelector(".lunch-hero").classList.remove("seen");
+    }
+    //remove dessert section if redirecting from dessert page
+    if (document.querySelector(".dessert-hero")){
+      document.querySelector(".dessert-hero").classList.remove("seen");
+    }
+    //add dinner section
     document.querySelector(".dinner-hero").classList.add("seen");
   });
 
@@ -77,7 +116,20 @@ function bindSubPages() {
     //remove main website sections
     document.querySelector(".hero").classList.remove("seen");
     document.querySelector(".featured").classList.remove("seen");
-    //add breakfast section
+    //remove breakfast sections if redirecting from lunch page
+    if (document.querySelector(".breakfast-hero")){
+      document.querySelector(".breakfast-hero").classList.remove("seen");
+    }
+    //remove lunch section if redirecting from lunch page
+    if (document.querySelector(".lunch-hero")){
+      document.querySelector(".lunch-hero").classList.remove("seen");
+    }
+    //remove dinner sections if redirecting from dinner page
+    if (document.querySelector(".dinner-hero")){
+      document.querySelector(".dinner-hero").classList.remove("seen");
+    }
+    
+    //add dessert section
     document.querySelector(".dessert-hero").classList.add("seen");
   });
 }
