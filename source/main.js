@@ -39,6 +39,24 @@ async function init() {
 function bindSubPages() {
   document.getElementById("homePage").addEventListener("click", function () {
     homeCarousels(6);
+
+  //remove any subpage hero sections
+  if (document.querySelector(".breakfast-hero")){
+    document.querySelector(".breakfast-hero").classList.remove("seen");
+  }
+  if (document.querySelector(".lunch-hero")){
+    document.querySelector(".lunch-hero").classList.remove("seen");
+  }
+  if (document.querySelector(".dinner-hero")){
+    document.querySelector(".dinner-hero").classList.remove("seen");
+  }
+  if (document.querySelector(".dessert-hero")){
+    document.querySelector(".dessert-hero").classList.remove("seen");
+  }
+
+  //add the home page sections
+  document.querySelector(".hero").classList.add("seen");
+    document.querySelector(".featured").classList.add("seen");
   });
 
   document
