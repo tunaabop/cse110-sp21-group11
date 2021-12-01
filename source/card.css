@@ -1,21 +1,35 @@
 /** section:not(section.display) {
   display: none;
 } **/
-.recipes-wrapper {
+
+/*original*/
+/*.recipes-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(12rem, 16rem));
+  grid-gap: 4.3rem;
+  justify-content: center;
+}*/
+
+.recipes-wrapper > card-carousel {
   display: grid;
   grid-template-columns: repeat(3, minmax(12rem, 16rem));
   grid-gap: 8rem;
   justify-content: center;
 }
 
+.hidden {
+  display: none;
+}
+
 article {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
   border-radius: 15px;
   border: 2px;
   padding: 15px;
   width: 300px;
-  height: 380px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 

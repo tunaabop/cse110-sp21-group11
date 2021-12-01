@@ -4,21 +4,22 @@
     <meta charset ="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Breakfast Recipes </title>
+   <!-- <script src="main.js" type="module"></script> -->
     <link rel="stylesheet" href="breakfast.css">
-    <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="mainWebsite.css">
     <script src="https://use.fontawesome.com/71ef81c39b.js"></script>
+    <script src="crud.js" type="module"></script>
     </head>
 
 <body class="hideScroll">
     <header>
-        <section class="top-bar">
+        <section class="top-bar seen">
             <nav>
                  <!-- start nav bar -->
                 <img src="images/logo.png" id="logo-img">
                 <ul>
-                    <li> <a href="home"> Home </a></li>
-                    <li> <a href="recipes"> Recipes </a>
+                    <li> <a href="index.html"> Home </a></li>
+                    <li> <a href=""> Recipes </a>
                     <i class="fa fa-caret-down"></i>
                     <!-- Recipes Dropdown -->
                         <ul class="dropdown">
@@ -58,10 +59,11 @@
             </div>
     <!-- end of top bar-->
     </section>
-        <section class="breakfast-hero">
+    
+        <section class="breakfast-hero seen">
             <div class="breakfast-hero-image">
             </div>
-            <section class="breakfast-hero-module"> 
+            <section class="breakfast-hero-module seen"> 
                 <div class="breakfast-hero-module-wrapper">
                     <h1> Breakfast Recipes </h1>
                     <p> From healthy breakfasts to indulgent dishes and everything in between, there's no doubt you'll find something easy and tasty you'll love.</p>
@@ -78,153 +80,30 @@
     </header>
     <main>
 
-    <section class="section-recipes-display">
+        <section class="section-recipes-display">
+            
+            <div class="recipes-wrapper">
+                <a class="back">&#10094</a>
+                <a class="forward">&#10095</a>
+            </div>
 
-        <h2> Easy Recipes under 60 Minutes
-            <i class="fa fa-long-arrow-right"></i>
-        </h2>
-        <!-- this div class of recipes-wrapper will be the carousel element-->
+            <div class="recipes-wrapper">
+                <a class="back">&#10094</a>
+                <a class="forward">&#10095</a>
+            </div>
 
-        <!-- recipe carousel #1-->
-
-        <div class="recipes-wrapper">
-            <!-- <recipe-carousel> -->
-
-            <article>
-                <img src="images/mac.jpg" class="card-image">
-                <p class="title"> BEST Homemade Mac and Cheese </p>
-                <p class="recipeTag"> Comfort Food </p>
-                <div class="rating-time"> 4.9
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 60 min </p>
-                </div>
-            </article>
-
-            <article>
-                <img class="card-image" src="images/risotto.jpg">
-                <p class="title"> Miso Sweet Potato Risotto </p>
-                <p class="recipeTag"> Quick Dinners </p>
-                <div class="rating-time"> 4.6
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 45 min</p>
-                </div>
-            </article>
-
-            <article>
-                <img src="images/dumpling.jpg" class="card-image">
-                <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                <p class="recipeTag"> Comfort Food </p>
-                <div class="rating-time"> 4.8
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 50 min </p>
-                </div>
-            </article>
-            <!-- </recipe-carousel> -->
-            <a class="back">&#10094</a>
-            <a class="forward">&#10095</a>
-        </div>
-
-        <h2> One-Pot Meals For Less Dishes
-            <i class="fa fa-long-arrow-right"></i>
-        </h2>
-
-        <!-- recipe carousel #2-->
-
-        <div class="recipes-wrapper">
-            <!-- <recipe-carousel> -->
-            <article>
-                <img src="images/mac.jpg" class="card-image">
-                <p class="title"> BEST Homemade Mac and Cheese </p>
-                <p class="recipeTag"> Comfort Food </p>
-                <div class="rating-time"> 4.9
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 60 min </p>
-                </div>
-            </article>
-
-            <article>
-                <img class="card-image" src="images/risotto.jpg">
-                <p class="title"> Miso Sweet Potato Risotto </p>
-                <p class="recipeTag"> Quick Dinners </p>
-                <div class="rating-time"> 4.6
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 45 min</p>
-                </div>
-            </article>
-
-            <article>
-                <img src="images/dumpling.jpg" class="card-image">
-                <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                <p class="recipeTag"> Comfort Food </p>
-                <div class="rating-time"> 4.8
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 50 min </p>
-                </div>
-            </article>
-
-            <!-- </recipe-carousel> -->
-            <a class="back">&#10094</a>
-            <a class="forward">&#10095</a>
-        </div>
-
-        <!-- recipe carousel #3-->
-
-        <h2> Dishes For Thanksgiving Dinner
-            <i class="fa fa-long-arrow-right"></i>
-        </h2>
-
-        <div class="recipes-wrapper">
-            <!-- <recipe-carousel> -->
-
-            <article>
-                <img src="images/mac.jpg" class="card-image">
-                <p class="title"> BEST Homemade Mac and Cheese </p>
-                <p class="recipeTag"> Comfort Food </p>
-                <div class="rating-time"> 4.9
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 60 min </p>
-                </div>
-            </article>
-
-            <article>
-                <img class="card-image" src="images/risotto.jpg">
-                <p class="title"> Miso Sweet Potato Risotto </p>
-                <p class="recipeTag"> Quick Dinners </p>
-                <div class="rating-time"> 4.6
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 45 min</p>
-                </div>
-            </article>
-
-            <article>
-                <img src="images/dumpling.jpg" class="card-image">
-                <p class="title"> Shrimp and Pork Chive Dumplings </p>
-                <p class="recipeTag"> Comfort Food </p>
-                <div class="rating-time"> 4.8
-                    <img src="images/5-stars-red.jpeg" class="rating">
-                    <img src="images/time-logo.png" class="time">
-                    <p> 50 min </p>
-                </div>
-            </article>
-
-            <!-- </recipe-carousel> -->
-            <a class="back">&#10094</a>
-            <a class="forward">&#10095</a>
-        </div>
-
-    </section>
+            <div class="recipes-wrapper">
+                <a class="back">&#10094</a>
+                <a class="forward">&#10095</a>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <div id="github">
+            <i class="fa fa-github"></i>
+            <p> Take a look at our github! </p>
+        </div>
     </footer>
 </body>
 </html>
