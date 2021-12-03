@@ -265,7 +265,10 @@ async function dinnerCarousels(numResults) {
     "vegan"
   );
 }
-
+/**
+ * 
+ * @param {*} numResults 
+ */
 //The specific carousels to load on the dessert page
 async function dessertCarousels(numResults) {
   clearCarousels();
