@@ -1,44 +1,61 @@
 .featured {
-    border: 1px solid #ccc;
-    padding: 20px 20px 20px 20px;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 20px 20px 20px;
+  overflow: hidden;
+  outline: none;
+  border: none;
 }
 
 .featured a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .featured-flex-container {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+  padding: 1rem;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.featured-flex-container:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
 }
 
 .featured-flex-item {
-    max-height: 400px;
-    max-width: 600px;
-    overflow: hidden;
-    background-color: rgb(240, 240, 240);
+  max-height: 400px;
+  max-width: 600px;
+  overflow: hidden;
+  background-color: rgb(240, 240, 240);
 }
 
 .featured-text {
-    padding: 20px;
-    height: 360px;
+  text-align: center;
+  padding: 20px;
+  height: 360px;
 }
 
 .featured-flex-item img {
-    height: 400px;
-    width: auto;
+  height: 400px;
+  width: auto;
 }
 
 .featured-flex-item p {
-    font-size: 1.5em;
-    font-family: 'Century Gothic', 'Candara', 'serif';
+  font-size: 1.3em;
+  font-family: "Century Gothic", "Candara", "serif";
 }
 
 .featured-flex-item h2 {
-    font-size: 1.8em;
-    color: #f55442;
+  text-decoration: 3px underline #ffcb3d;
+  padding: 10px;
+  font-size: 1.8em;
+  color: #f55442;
+}
+
+.featured-flex-item h3 {
+  padding: 20px;
+  font-size: 1.1em;
+  color: #3b3838;
 }
