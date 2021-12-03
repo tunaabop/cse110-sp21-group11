@@ -8,8 +8,7 @@
         "cypress": "^9.1.0",
         "eslint": "^8.3.0",
         "eslint-plugin-cypress": "^2.12.1",
-        "jest": "^27.3.1",
-        "jest-puppeteer": "^6.0.0",
+        "jsdoc": "^3.6.7",
         "puppeteer": "^11.0.0",
         "webpack": "^5.64.4",
         "webpack-cli": "^4.9.1"
@@ -20,12 +19,6 @@
         "lint": "npx eslint ./",
         "start": "npx webpack --config ./source/webpack.config.js --mode development --watch",
         "build": "npx webpack --config ./source/webpack.config.js --mode production"
-    },
-    "jest": {
-        "preset": "jest-puppeteer",
-        "verbose": true
-    },
-    "dependencies": {
     },
     "name": "cse110-sp21-group11",
     "description": "[Team Page](https://github.com/cse110-fa21-group11/cse110-sp21-group11/blob/main/admin/team.md)",
