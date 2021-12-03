@@ -17,7 +17,6 @@
     "scripts": {
         "test": "npx cypress run",
         "cypress:open": "npx cypress open",
-        "jtest": "npx jest ./__tests__",
         "lint": "npx eslint ./",
         "start": "npx webpack --config ./source/webpack.config.js --mode development --watch",
         "build": "npx webpack --config ./source/webpack.config.js --mode production"
