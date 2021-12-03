@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> upload a recipe </title>
+        <script src="/crud.js" type="module"></script>
+        <style>
+
+          body {
+            background-color: #302e2e;
+            font-family: Century Gothic, Candara, serif;
+          }
+
+          #uploadFile{
+            color: white;
+          }
+          #addRecipeDialog {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          #addRecipeDialog
+          label {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: antiquewhite;
+            padding: 5px;
+            font-weight: lighter;
+          }
+          
+          #addRecipeDialog input {
+            width: 450px;
+            padding: 10px;
+            background-color: #302e2e;
+            color: white;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border: 1.5px #999796 solid;
+            outline: none;
+          }
+
+          textarea{
+            height: 250px;
+            padding: 10px;
+            width: 450px;
+            background-color: #302e2e;
+            color: white;
+            box-sizing: border-box;
+            border: 1.5px #999796 solid;
+            border-radius: 5px;
+            outline: none;
+          }
+          
+          #addWrapper {
+            justify-content: center;
+            padding: 10px;
+          }
+
+          #instructions {
+            max-height: 300px;
+          }
+
+          h2 {
+            font-size: 25px;
+            margin: 10px;
+            padding: 12px;
+            color: #ebdea0;
+          }
+
+          .crudButtons{
+            display: flex;
+            flex-direction: space-between;
+          }
+
+          #add, #cancel{
+            outline: none;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+          }
+
+          button:hover{
+            transform: scale(1.07);
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+          }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+
+            </header>
+    
+            <form id="addRecipeDialog" method="POST">
+                <h2> ENTER RECIPE DETAILS</h2>
+                <label> Upload Recipe Thumbnail</label>
+                <input type="file" id="uploadFile" accept=".png, .jpg">
+                <label> Name </label>
+                <input type="text" id="name" placeholder="Your Name">
+                <br>
+                <label> Recipe Title </label>
+                <input type="text" id="recipeTitle" class="title" placeholder="Recipe Title">
+                <br>
+                <label>Ingredients </label> 
+                <textarea id="ingredients" class="ingredients"> </textarea>
+                <br> 
+                <label>Time </label> 
+                <input type="text" id="time" class="time" placeholder="Time the recipe takes to prepare and cook">
+                <br> 
+                <label>Tags </label> 
+                <input type="text" id="tag" class="recipeTag" placeholder="Add any tags or keywords for this recipe">
+                <br> 
+                <label> Recipe Instructions </label> 
+                <textarea id="instructions"> </textarea>
+                <br> 
+
+                <section class="crudButtons"> 
+                <button type="button" id="add"> Add Recipe </button>
+                <button type="button" id="cancel"> Cancel Add</button>
+              </section>
+            </form>
+    
+            <!-- option to edit recipes -->
+            <!--
+            <dialog id="editRecipeDialog">
+                <h2> Edit your recipe </h2>
+                <label> Upload Recipe Thumbnail</label>
+                <input type="file" id="uploadFile" accept=".png, .jpg">
+                <label> Name </label>
+                <input type="text" id="name" placeholder="Your Name">
+                <br>
+                <label> Recipe Title </label>
+                <input type="text" id="recipeTitle" class="title" placeholder="Recipe Title">
+                <br>
+                <label>Ingredients </label> 
+                <textarea id="ingredients" class="ingredients"> </textarea>
+                <br> 
+                <label>Time </label> 
+                <input type="text" id="time" class="time" placeholder="Time the recipe takes to prepare and cook">
+                <br> 
+                <label>Tags </label> 
+                <input type="text" id="tag" class="recipeTag" placeholder="Add any tags or keywords for this recipe">
+                <br> 
+                <label> Recipe Instructions </label> 
+                <textarea id="instructions"> </textarea>
+                <br> 
+
+                <section class="crudButtons">
+                <button type="button" id="edit"> Edit Recipe </button>
+                <button type="button" id="cancelEdit"> Cancel </button>
+              </section>
+            </dialog>
+            -->
+            <footer>
+
+            </footer>
+        </main>
+    </body>
+    </html>
