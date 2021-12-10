@@ -6,11 +6,58 @@
     <title> Lunch Recipes </title>
     <link rel="stylesheet" href="lunch.css">
     <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="mainWebsite.css">
     <script src="https://use.fontawesome.com/71ef81c39b.js"></script>
     </head>
 
-<body>
+<body class="hideScroll">
     <header>
+        <section class="top-bar">
+            <nav>
+                 <!-- start nav bar -->
+                <img src="images/logo.png" id="logo-img">
+                <ul>
+                    <li> <a href="home"> Home </a></li>
+                    <li> <a href="recipes"> Recipes </a>
+                    <i class="fa fa-caret-down"></i>
+                    <!-- Recipes Dropdown -->
+                        <ul class="dropdown">
+                            <li><a href="breakfast.html"> Breakfast </a></li>
+                            <li><a href="lunch.html"> Lunch </a></li>
+                            <li><a href="dinner.html"> Dinner </a></li>
+                            <li><a href="snacks.html"> Snacks </a></li>
+                             <li><a href="dessert.html"> Dessert </a></li>
+                        <!-- End Recipes Dropdown-->
+                        </ul>
+            <!-- End recipes nav-->
+                    </li>
+                    <li> <a href="https://spoonacular.com/articles/academy#Basics"> How-To's/Techniques </a>
+                    <i class="fa fa-caret-down"></i>
+                        <ul class="dropdown">
+                            <li><a href="https://spoonacular.com/academy/must-have-kitchen-utensils"> Needed Kitchen Utensils </a></li>
+                            <li><a href="https://spoonacular.com/academy/using-your-grill-or-oven"> Using Oven/Grill </a></li>
+                            <li><a href="https://spoonacular.com/articles/academy#Basics"> Cooking Techniques </a></li>
+                            <li><a href="https://spoonacular.com/academy/knife-techniques"> Cutting Techniques </a></li>
+                        <!-- End how-to's Dropdown-->
+                        </ul>
+                <!-- end how-tos nav bar-->
+                </li>
+            <!-- end nav bar -->
+            </ul>
+        </nav>
+        <div id="addWrapper">
+            <button type="button" id="addRecipeBtn" > Upload a Recipe </button>
+        </div>
+        <!-- He11's Kitchen title on nav bar -->
+            <p> He<span style="color: red">11</span>'s <span style="color: #f1dcb4">Kitchen </span></p>
+            <div class="search-box">
+                <input type="text" placeholder=" Type here...." />
+                <label for="" id="icon">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+            </div>
+    <!-- end of top bar-->
+    </section>
         <section class="lunch-hero">
             <div class="lunch-hero-image">
             </div>
@@ -19,26 +66,39 @@
                 <h1> Lunch Recipes </h1>
                 <p> Browse around and you're bound to find top lunch ideas that are healthy, easy, and delicious!</p>
             </div>
+
+            </br>
+
+            <div class="hero-search">
+                <input type="text" placeholder="Search here...." />
+                <label for="" id="hero-icon">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+            </div>
             </section>
         </section>
     </header>
     <main>
-        <section class="checkbox-lunch">
-            <input type="checkbox" id="pasta" name="pasta" value="pasta">
-            <label for="pasta"> Pasta</label><br>
-            <input type="checkbox" id="one-pot" name="one-pot" value="one-pot">
-            <label for="one-pot"> One-Pot</label><br>
-            <input type="checkbox" id="salads" name="salads" value="salads">
-            <label for="salads"> Salads</label><br>
-            <input type="checkbox" id="soups" name="soups" value="soups">
-            <label for="soups"> Soups</label><br>
-            <input type="checkbox" id="sandwiches" name="sandwiches" value="sandwiches">
-            <label for="sandwiches"> Sandwiches</label><br>
-    </section>
+
+        <section class="section-recipes-display">
+
+            <div class="recipes-wrapper"> 
+            </div>
+    
+            <div class="recipes-wrapper">
+            </div>
+    
+            <div class="recipes-wrapper">
+            </div>
+    
+        </section>
     </main>
 
     <footer>
-
+        <div id="github">
+            <i class="fa fa-github"></i>
+            <p> Take a look at our github! </p>
+        </div>
     </footer>
 </body>
 </html>
