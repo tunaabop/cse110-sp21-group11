@@ -55,7 +55,7 @@ I am a fourth year undergraduate student studying Computer Engineering at UCSD. 
 
 ### **Tina Wang** ###
 
-[Github page](https://github.com/t6wang)
+[Github page](https://github.com/tunaabop)
 
 I am a fourth year undergraduate student at UCSD studying mathematics-computer science and management science. My professional interest is software engineering. During my free time, I am passionate about watching team sports and playing lacrosse. I also enjoy exploring new music and everything outdoor such as going on new hikes as well as exploring new food places and trying out new drink recipes!
 
