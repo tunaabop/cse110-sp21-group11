@@ -1,4 +1,4 @@
-# *He11's Kitchen - Recipe Web App * #
+# He11's Kitchen - Recipe Web App 
 
 [Team Page](admin/team.md)
 
